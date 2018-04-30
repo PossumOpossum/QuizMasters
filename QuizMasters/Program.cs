@@ -16,9 +16,9 @@ namespace QuizMasters
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Start start = new Start();
-            start.Show();
-            Application.Run();
+            
+            Application.Run(new Start());
+           
         }
     }
 }
