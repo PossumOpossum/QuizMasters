@@ -38,6 +38,11 @@
             this.next_button = new System.Windows.Forms.Button();
             this.correct = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.igrach1Label = new System.Windows.Forms.Label();
+            this.igrach2Label = new System.Windows.Forms.Label();
+            this.igrach3Label = new System.Windows.Forms.Label();
+            this.igrach4Label = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Prasanje
@@ -123,11 +128,55 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Точен одговор";
             // 
+            // igrach1Label
+            // 
+            this.igrach1Label.AutoSize = true;
+            this.igrach1Label.Location = new System.Drawing.Point(272, 123);
+            this.igrach1Label.Name = "igrach1Label";
+            this.igrach1Label.Size = new System.Drawing.Size(0, 17);
+            this.igrach1Label.TabIndex = 10;
+            // 
+            // igrach2Label
+            // 
+            this.igrach2Label.AutoSize = true;
+            this.igrach2Label.Location = new System.Drawing.Point(272, 161);
+            this.igrach2Label.Name = "igrach2Label";
+            this.igrach2Label.Size = new System.Drawing.Size(0, 17);
+            this.igrach2Label.TabIndex = 11;
+            // 
+            // igrach3Label
+            // 
+            this.igrach3Label.AutoSize = true;
+            this.igrach3Label.Location = new System.Drawing.Point(272, 194);
+            this.igrach3Label.Name = "igrach3Label";
+            this.igrach3Label.Size = new System.Drawing.Size(0, 17);
+            this.igrach3Label.TabIndex = 12;
+            // 
+            // igrach4Label
+            // 
+            this.igrach4Label.AutoSize = true;
+            this.igrach4Label.Location = new System.Drawing.Point(272, 227);
+            this.igrach4Label.Name = "igrach4Label";
+            this.igrach4Label.Size = new System.Drawing.Size(0, 17);
+            this.igrach4Label.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(430, 118);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 14;
+            // 
             // Igra_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.igrach4Label);
+            this.Controls.Add(this.igrach3Label);
+            this.Controls.Add(this.igrach2Label);
+            this.Controls.Add(this.igrach1Label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.correct);
             this.Controls.Add(this.next_button);
@@ -138,9 +187,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Prasanje);
+            this.KeyPreview = true;
             this.Name = "Igra_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Igra_1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Igra_1_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Igra_1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -159,5 +210,10 @@
         private System.Windows.Forms.Button next_button;
         private System.Windows.Forms.TextBox correct;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label igrach1Label;
+        private System.Windows.Forms.Label igrach2Label;
+        private System.Windows.Forms.Label igrach3Label;
+        private System.Windows.Forms.Label igrach4Label;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

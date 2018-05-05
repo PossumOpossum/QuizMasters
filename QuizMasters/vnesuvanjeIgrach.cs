@@ -45,7 +45,16 @@ namespace QuizMasters
 
             Igra_1 forma = new Igra_1(igrachi, numberOfPlayers);
             forma.Show();
+            this.Close();
             MessageBox.Show("Upatstvo");
         }
+
+        private void vnesuvanjeIgrach_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Application.OpenForms.Count == 1)
+                Application.Exit();
+        }
+
+       
     }
 }

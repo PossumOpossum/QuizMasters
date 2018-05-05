@@ -118,6 +118,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Start";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

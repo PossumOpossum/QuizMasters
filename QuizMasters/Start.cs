@@ -23,6 +23,7 @@ namespace QuizMasters
             
             vnesuvanjeIgrach forma = new vnesuvanjeIgrach(2);
             forma.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -30,15 +31,27 @@ namespace QuizMasters
             vnesuvanjeIgrach forma = new vnesuvanjeIgrach(3);
             forma.Show();
             this.Close();
+            
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             vnesuvanjeIgrach forma = new vnesuvanjeIgrach(4);
-            this.Close();
+            
             forma.Show();
+            this.Close();
             
         }
+
+        private void Start_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            //  e.Cancel = true;
+            if (Application.OpenForms.Count == 1)
+                Application.Exit();
+        }
+
+       
     }
 }

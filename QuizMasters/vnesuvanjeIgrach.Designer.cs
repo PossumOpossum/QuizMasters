@@ -190,6 +190,8 @@
             this.Name = "vnesuvanjeIgrach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "vnesuvanjeIgrach";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.vnesuvanjeIgrach_FormClosing);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
