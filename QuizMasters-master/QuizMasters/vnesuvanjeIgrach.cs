@@ -46,7 +46,7 @@ namespace QuizMasters
             if(numberOfPlayers == 4)
                 igrachi.Add(new Igrach(ime4.Text, prezime4.Text));
 
-            Igra_1 forma = new Igra_1(igrachi, numberOfPlayers);
+            Igra_1 forma = new Igra_1(igrachi);
             forma.Show();
             this.Close();
             MessageBox.Show("Upatstvo");

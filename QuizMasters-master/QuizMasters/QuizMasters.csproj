@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Igra2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Igra2.Designer.cs">
+      <DependentUpon>Igra2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Igrach.cs" />
     <Compile Include="Igra_1.cs">
       <SubType>Form</SubType>
@@ -74,6 +80,9 @@
     <Compile Include="vnesuvanjeIgrach.Designer.cs">
       <DependentUpon>vnesuvanjeIgrach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Igra2.resx">
+      <DependentUpon>Igra2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Igra_1.resx">
       <DependentUpon>Igra_1.cs</DependentUpon>
     </EmbeddedResource>

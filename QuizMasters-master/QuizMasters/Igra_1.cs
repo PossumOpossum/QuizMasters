@@ -19,13 +19,22 @@ namespace QuizMasters
         public string[] lines { get; set; }
         public static Timer timer;
         static int counter;
+        public bool first_true { get; set; }
+        public bool second_true { get; set; }
+        public bool third_true { get; set; }
+        public bool fourth_true { get; set; }
         public int secondsleft { get; set; }
-        public int brojIgrachi { get; set; }
-        public Igra_1(List<Igrach> igrachi, int brojIgrachi)
+        public int endcounter { get; set; }
+
+        public Igra_1(List<Igrach> igrachi)
         {
             InitializeComponent();
             this.igrachi = igrachi;
-            this.brojIgrachi = brojIgrachi;
+            endcounter = 1;
+            first_true = false;
+            second_true = false;
+            third_true = false;
+            fourth_true = false;
             lines = System.IO.File.ReadAllLines(@"Prasanja_prva.txt");
             prasanja = new List<Prasanje_prva>();
             secondsleft = 10;
@@ -51,11 +60,13 @@ namespace QuizMasters
             timer.Tick += TimerOnTick;
             igrach1Label.Text = igrachi[0].ime + " " + igrachi[0].prezime;
             igrach2Label.Text = igrachi[1].ime + " " + igrachi[1].prezime;
-            if (brojIgrachi >= 3)
+            igrach3Label.Text = "";
+            igrach4Label.Text = "";
+            if (igrachi.Count >= 3)
                 igrach3Label.Text = igrachi[2].ime + " " + igrachi[2].prezime;
             else
                 textBox3.Hide();
-            if (brojIgrachi == 4)
+            if (igrachi.Count == 4)
                 igrach4Label.Text = igrachi[3].ime + " " + igrachi[3].prezime;
             else
                 textBox4.Hide();
@@ -72,6 +83,31 @@ namespace QuizMasters
             else
             {
                 timer.Stop();
+                next_button.Enabled = true;
+                if (counter == endcounter)
+                    next_button.Text = "Нова Игра";
+                if (first_true)
+                    textBox1.BackColor = Color.Green;
+                else
+                    textBox1.BackColor = Color.Red;
+                if (second_true)
+                    textBox2.BackColor = Color.Green;
+                else
+                    textBox2.BackColor = Color.Red;
+                if (third_true)
+                    textBox3.BackColor = Color.Green;
+                else
+                    textBox3.BackColor = Color.Red;
+                if (fourth_true)
+                    textBox4.BackColor = Color.Green;
+                else
+                    textBox4.BackColor = Color.Red;
+
+                first_true = false;
+                second_true = false;
+                third_true = false;
+                fourth_true = false;
+
                 String correct = prasanja[counter - 1].odgovori[3];
                 if (button1.Text.Equals(correct))
                     button1.BackColor = Color.LawnGreen;
@@ -82,16 +118,20 @@ namespace QuizMasters
                 if (button4.Text.Equals(correct))
                     button4.BackColor = Color.LawnGreen;
                 //MessageBox.Show(igrachi[0].poeniVkupno.ToString());
-                if (counter == 15)
-                {//leaderboard
-
-                    this.Close();
-                }
+                
             }
         }
 
         private void next_button_Click(object sender, EventArgs e)
         {
+            if (counter == endcounter)
+            {//leaderboard
+                Igra2 nova = new Igra2(igrachi);
+                nova.Show();
+                this.Close();
+                MessageBox.Show("Upatstvo");
+            }
+           
             Prasanje.Text = prasanja[counter].prasanje;
             List<int> izminati = new List<int>();
             Random rand = new Random();
@@ -138,224 +178,222 @@ namespace QuizMasters
             counter++;
             
             timer.Start();
+            next_button.Enabled = false;
         }
 
         private void Igra_1_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyData.Equals(Keys.D1))
             {
+                textBox1.BackColor = Color.Yellow;
                 if (button1.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[0].locked && progressBar1.Value!=0)
                 {
                     igrachi[0].poeniVkupno++;
                     igrachi[0].poeniPoIgra[0]++;
                     igrachi[0].locked = true;
-                    textBox1.BackColor = Color.Green;
+                    first_true = true;
                 }
-                else
-                    textBox1.BackColor = Color.Red;
+    
             }
 
             if (e.KeyData.Equals(Keys.D2))
             {
+                textBox1.BackColor = Color.Yellow;
                 if (button2.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[0].locked && progressBar1.Value != 0)
                 { 
                     igrachi[0].poeniVkupno++;
                     igrachi[0].poeniPoIgra[0]++;
                     igrachi[0].locked = true;
-                    textBox1.BackColor = Color.Green;
+                    first_true = true;
                 }
-                else
-                    textBox1.BackColor = Color.Red;
+               
             }
 
             if (e.KeyData.Equals(Keys.D3))
             {
+                textBox1.BackColor = Color.Yellow;
                 if (button3.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[0].locked && progressBar1.Value != 0)
                 {
                     igrachi[0].poeniVkupno++;
                     igrachi[0].poeniPoIgra[0]++;
                     igrachi[0].locked = true;
-                    textBox1.BackColor = Color.Green;
+                    first_true = true;
                 }
-                else
-                    textBox1.BackColor = Color.Red;
+              
             }
 
             if (e.KeyData.Equals(Keys.D4))
             {
+                textBox1.BackColor = Color.Yellow;
                 if (button4.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[0].locked && progressBar1.Value != 0)
                 {
                     igrachi[0].poeniVkupno++;
                     igrachi[0].poeniPoIgra[0]++;
                     igrachi[0].locked = true;
-                    textBox1.BackColor = Color.Green;
-                }
-                else
-                    textBox1.BackColor = Color.Red;
-
+                    first_true = true;
+                }               
             }
 
         
 
             if (e.KeyData.Equals(Keys.Z))
             {
+                textBox2.BackColor = Color.Yellow;
                 if (button1.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[1].locked && progressBar1.Value != 0)
                 {
                     igrachi[1].poeniVkupno++;
                     igrachi[1].poeniPoIgra[0]++;
                     igrachi[1].locked = true;
-                    textBox2.BackColor = Color.Green;
-                }
-                else
-                    textBox2.BackColor = Color.Red;
+                    second_true = true;
+                }               
             }
 
             if (e.KeyData.Equals(Keys.X))
             {
+                textBox2.BackColor = Color.Yellow;
                 if (button2.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[1].locked && progressBar1.Value != 0)
                 {
                     igrachi[1].poeniVkupno++;
                     igrachi[1].poeniPoIgra[0]++;
                     igrachi[1].locked = true;
-                    textBox2.BackColor = Color.Green;
+                    second_true = true;
                 }
-                else
-                    textBox2.BackColor = Color.Red;
+ 
             }
 
             if (e.KeyData.Equals(Keys.C))
             {
+                textBox2.BackColor = Color.Yellow;
                 if (button3.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[1].locked && progressBar1.Value != 0)
                 {
                     igrachi[1].poeniVkupno++;
                     igrachi[1].poeniPoIgra[0]++;
                     igrachi[1].locked = true;
-                    textBox2.BackColor = Color.Green;
+                    second_true = true;
                 }
-                else
-                    textBox2.BackColor = Color.Red;
+            
             }
 
             if (e.KeyData.Equals(Keys.V))
             {
+                textBox2.BackColor = Color.Yellow;
                 if (button4.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[1].locked && progressBar1.Value != 0)
                 {
                     igrachi[1].poeniVkupno++;
                     igrachi[1].poeniPoIgra[0]++;
                     igrachi[1].locked = true;
-                    textBox2.BackColor = Color.Green;
+                    second_true = true;
                 }
-                else
-                    textBox2.BackColor = Color.Red;
+            
             }
 
-            if (brojIgrachi >= 3)
+            if (igrachi.Count >= 3)
             {
                 if (e.KeyData.Equals(Keys.D7))
                 {
+                    textBox3.BackColor = Color.Yellow;
                     if (button1.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[2].locked && progressBar1.Value != 0)
                     {
                         igrachi[2].poeniVkupno++;
                         igrachi[2].poeniPoIgra[0]++;
                         igrachi[2].locked = true;
-                        textBox3.BackColor = Color.Green;
+                        third_true = true;
                     }
-                    else
-                        textBox3.BackColor = Color.Red;
+                
                 }
 
                 if (e.KeyData.Equals(Keys.D8))
                 {
+                    textBox3.BackColor = Color.Yellow;
                     if (button2.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[2].locked && progressBar1.Value != 0)
                     {
                         igrachi[2].poeniVkupno++;
                         igrachi[2].poeniPoIgra[0]++;
                         igrachi[2].locked = true;
-                        textBox3.BackColor = Color.Green;
+                        third_true = true;
                     }
-                    else
-                        textBox3.BackColor = Color.Red;
+     
                 }
 
                 if (e.KeyData.Equals(Keys.D9))
                 {
+                    textBox3.BackColor = Color.Yellow;
                     if (button3.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[2].locked && progressBar1.Value != 0)
                     {
                         igrachi[2].poeniVkupno++;
                         igrachi[2].poeniPoIgra[0]++;
                         igrachi[2].locked = true;
-                        textBox3.BackColor = Color.Green;
+                        third_true = true;
                     }
-                    else
-                        textBox3.BackColor = Color.Red;
+                  
                 }
 
                 if (e.KeyData.Equals(Keys.D0))
                 {
+                    textBox3.BackColor = Color.Yellow;
                     if (button4.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[2].locked && progressBar1.Value != 0)
                     {
                         igrachi[2].poeniVkupno++;
                         igrachi[2].poeniPoIgra[0]++;
                         igrachi[2].locked = true;
-                        textBox3.BackColor = Color.Green;
+                        third_true = true;
                     }
-                    else
-                        textBox3.BackColor = Color.Red;
+                 
                 }
             }
 
-            if (brojIgrachi == 4)
+            if (igrachi.Count == 4)
             {
                 if (e.KeyData.Equals(Keys.N))
                 {
+                    textBox4.BackColor = Color.Yellow;
                     if (button1.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[3].locked && progressBar1.Value != 0)
                     {
                         igrachi[3].poeniVkupno++;
                         igrachi[3].poeniPoIgra[0]++;
                         igrachi[3].locked = true;
-                        textBox4.BackColor = Color.Green;
+                        fourth_true = true;
                     }
-                    else
-                        textBox4.BackColor = Color.Red;
+                  
                 }
 
                 if (e.KeyData.Equals(Keys.M))
                 {
+                    textBox4.BackColor = Color.Yellow;
                     if (button2.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[3].locked && progressBar1.Value != 0)
                     {
                         igrachi[3].poeniVkupno++;
                         igrachi[3].poeniPoIgra[0]++;
                         igrachi[3].locked = true;
-                        textBox4.BackColor = Color.Green;
+                        fourth_true = true;
                     }
-                    else
-                        textBox4.BackColor = Color.Red;
+                  
                 }
 
                 if (e.KeyData.Equals(Keys.Oemcomma))
                 {
+                    textBox4.BackColor = Color.Yellow;
                     if (button3.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[3].locked && progressBar1.Value != 0)
                     {
                         igrachi[3].poeniVkupno++;
                         igrachi[3].poeniPoIgra[0]++;
                         igrachi[3].locked = true;
-                        textBox4.BackColor = Color.Green;
+                        fourth_true = true;
                     }
-                    else
-                        textBox4.BackColor = Color.Red;
+                 
                 }
 
                 if (e.KeyData.Equals(Keys.OemPeriod))
                 {
+                    textBox4.BackColor = Color.Yellow;
                     if (button4.Text.Equals(prasanja[counter - 1].odgovori[3]) && !igrachi[3].locked && progressBar1.Value != 0)
                     {
                         igrachi[3].poeniVkupno++;
                         igrachi[3].poeniPoIgra[0]++;
                         igrachi[3].locked = true;
-                        textBox4.BackColor = Color.Green;
+                        fourth_true = true;
                     }
-                    else
-                        textBox4.BackColor = Color.Red;
+              
                 }
             }
         }
