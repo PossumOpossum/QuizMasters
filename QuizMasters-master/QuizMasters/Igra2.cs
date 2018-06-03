@@ -29,6 +29,8 @@ namespace QuizMasters
         public List<Button> buttons { get; set; }
         public bool[] lockedbuttons { get; set; }
         private bool solved;
+        public bool[] columns { get; set; }
+        public HashSet<int> enabledForAnswering { get; set; }
 
         private void setCLickable(bool mybool)
         {
@@ -45,6 +47,40 @@ namespace QuizMasters
                     buttons[i].Enabled = false;
                 }
 
+            }
+        }
+        private void deservesPoints(int start, int end)
+        {
+            int pointsForNow = 0;
+            for (int i = start; i < end; i++)
+            {
+                if (lockedbuttons[i] == false)
+                    pointsForNow++;
+            }
+            igrachi[turn].poeniVkupno += pointsForNow;
+        }
+        private void disableAnswers()
+        {
+            VerifyA.Enabled = false;
+            VerifyB.Enabled = false;
+            VerifyC.Enabled = false;
+            VerifyD.Enabled = false;
+            VerifyFull.Enabled = false;
+        }
+        private void enableAnswers()
+        {
+            foreach(int i in enabledForAnswering)
+            {
+                if (i == 0)
+                    VerifyA.Enabled = true;
+                else if (i == 1)
+                    VerifyB.Enabled = true;
+                else if (i == 2)
+                    VerifyC.Enabled = true;
+                else if (i == 3)
+                    VerifyD.Enabled = true;
+                else if (i == 4)
+                    VerifyFull.Enabled = true;
             }
         }
         public Igra2(List<Igrach> igrachi)
@@ -68,7 +104,13 @@ namespace QuizMasters
             buttons.Add(D2);
             buttons.Add(D3);
             buttons.Add(D4);
+            Answer1.ReadOnly = true;
+            Answer2.ReadOnly = true;
+            Answer3.ReadOnly = true;
+            Answer4.ReadOnly = true;
             lockedbuttons = new bool[16];
+            columns = new bool[4];
+            enabledForAnswering = new HashSet<int>();
             filenames = System.IO.Directory.GetFiles(@"Asocijacii");
             Random rand = new Random();
             int file_index = rand.Next(filenames.Length);
@@ -124,6 +166,16 @@ namespace QuizMasters
 
         private void NextPlayer_Click(object sender, EventArgs e)
         {
+            bool flag = false;
+            foreach(bool bl in lockedbuttons)
+            {
+                if (!bl)
+                    flag = true;
+            }
+            if (flag)
+            {
+                disableAnswers();
+            }
             if (solved)
             {
                 ///new form
@@ -153,6 +205,9 @@ namespace QuizMasters
 
         private void A1_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(0);
+            enableAnswers();
+            Answer1.ReadOnly = false;
             A1.Text = A_words[0];
             lockedbuttons[0] = true;
             setCLickable(false);
@@ -161,6 +216,9 @@ namespace QuizMasters
 
         private void A2_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(0);
+            enableAnswers();
+            Answer1.ReadOnly = false;
             A2.Text = A_words[1];
             lockedbuttons[1] = true;
             setCLickable(false);
@@ -169,6 +227,9 @@ namespace QuizMasters
 
         private void A3_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(0);
+            enableAnswers();
+            Answer1.ReadOnly = false;
             A3.Text = A_words[2];
             lockedbuttons[2] = true;
             setCLickable(false);
@@ -177,6 +238,9 @@ namespace QuizMasters
 
         private void A4_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(0);
+            enableAnswers();
+            Answer1.ReadOnly = false;
             A4.Text = A_words[3];
             lockedbuttons[3] = true;
             setCLickable(false);
@@ -185,6 +249,9 @@ namespace QuizMasters
 
         private void B1_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(1);
+            enableAnswers();
+            Answer2.ReadOnly = false;
             B1.Text = B_words[0];
             lockedbuttons[4] = true;
             setCLickable(false);
@@ -193,6 +260,9 @@ namespace QuizMasters
 
         private void B2_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(1);
+            enableAnswers();
+            Answer2.ReadOnly = false;
             B2.Text = B_words[1];
             lockedbuttons[5] = true;
             setCLickable(false);
@@ -201,6 +271,9 @@ namespace QuizMasters
 
         private void B3_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(1);
+            enableAnswers();
+            Answer2.ReadOnly = false;
             B3.Text = B_words[2];
             lockedbuttons[6] = true;
             setCLickable(false);
@@ -209,6 +282,9 @@ namespace QuizMasters
 
         private void B4_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(1);
+            enableAnswers();
+            Answer2.ReadOnly = false;
             B4.Text = B_words[3];
             lockedbuttons[7] = true;
             setCLickable(false);
@@ -217,6 +293,9 @@ namespace QuizMasters
 
         private void C1_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(2);
+            enableAnswers();
+            Answer3.ReadOnly = false;
             C1.Text = C_words[0];
             lockedbuttons[8] = true;
             setCLickable(false);
@@ -225,6 +304,9 @@ namespace QuizMasters
 
         private void C2_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(2);
+            enableAnswers();
+            Answer3.ReadOnly = false;
             C2.Text = C_words[1];
             lockedbuttons[9] = true;
             setCLickable(false);
@@ -233,6 +315,9 @@ namespace QuizMasters
 
         private void C3_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(2);
+            enableAnswers();
+            Answer3.ReadOnly = false;
             C3.Text = C_words[2];
             lockedbuttons[10] = true;
             setCLickable(false);
@@ -241,6 +326,9 @@ namespace QuizMasters
 
         private void C4_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(2);
+            enableAnswers();
+            Answer3.ReadOnly = false;
             C4.Text = C_words[3];
             lockedbuttons[11] = true;
             setCLickable(false);
@@ -249,6 +337,9 @@ namespace QuizMasters
 
         private void D1_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(3);
+            enableAnswers();
+            Answer4.ReadOnly = false;
             D1.Text = D_words[0];
             lockedbuttons[12] = true;
             setCLickable(false);
@@ -257,6 +348,9 @@ namespace QuizMasters
 
         private void D2_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(3);
+            enableAnswers();
+            Answer4.ReadOnly = false;
             D2.Text = D_words[1];
             lockedbuttons[13] = true;
             setCLickable(false);
@@ -265,6 +359,9 @@ namespace QuizMasters
 
         private void D3_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(3);
+            enableAnswers();
+            Answer4.ReadOnly = false;
             D3.Text = D_words[2];
             lockedbuttons[14] = true;
             setCLickable(false);
@@ -273,6 +370,9 @@ namespace QuizMasters
 
         private void D4_Click(object sender, EventArgs e)
         {
+            enabledForAnswering.Add(3);
+            enableAnswers();
+            Answer4.ReadOnly = false;
             D4.Text = D_words[3];
             lockedbuttons[15] = true;
             setCLickable(false);
@@ -295,6 +395,11 @@ namespace QuizMasters
         {
             if (A_solutions.Contains(Answer1.Text))
             {
+                enabledForAnswering.Remove(0);
+                enabledForAnswering.Add(4);
+                enableAnswers();
+                deservesPoints(0, 4);
+                columns[0] = true;
                 A1.Text = A_words[0];
                 A2.Text = A_words[1];
                 A3.Text = A_words[2];
@@ -326,6 +431,11 @@ namespace QuizMasters
         {
             if (B_solutions.Contains(Answer2.Text))
             {
+                enabledForAnswering.Remove(1);
+                enabledForAnswering.Add(4);
+                enableAnswers();
+                deservesPoints(4, 8);
+                columns[1] = true;
                 B1.Text = B_words[0];
                 B2.Text = B_words[1];
                 B3.Text = B_words[2];
@@ -357,6 +467,11 @@ namespace QuizMasters
         {
             if (C_solutions.Contains(Answer3.Text))
             {
+                enabledForAnswering.Remove(2);
+                enabledForAnswering.Add(4);
+                enableAnswers();
+                deservesPoints(8, 12);
+                columns[2] = true;
                 C1.Text = C_words[0];
                 C2.Text = C_words[1];
                 C3.Text = C_words[2];
@@ -387,6 +502,11 @@ namespace QuizMasters
         {
             if (D_solutions.Contains(Answer4.Text))
             {
+                enabledForAnswering.Remove(3);
+                enabledForAnswering.Add(4);
+                enableAnswers();
+                deservesPoints(12, 16);
+                columns[3] = true;
                 D1.Text = D_words[0];
                 D2.Text = D_words[1];
                 D3.Text = D_words[2];
@@ -417,6 +537,13 @@ namespace QuizMasters
         {
             if (full_solutions.Contains(FullAnswer.Text))
             {
+                int pointsForNow = 4;
+                foreach(bool bl in columns)
+                {
+                    if (!bl)
+                        pointsForNow += 2;
+                }
+                igrachi[turn].poeniVkupno += pointsForNow;
                 A1.Text = A_words[0];
                 A2.Text = A_words[1];
                 A3.Text = A_words[2];
