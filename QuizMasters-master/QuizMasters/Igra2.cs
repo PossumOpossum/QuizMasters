@@ -183,6 +183,9 @@ namespace QuizMasters
             if (solved)
             {
                 ///new form
+                Igra_3 forma = new Igra_3(igrachi);
+                forma.Show();
+                this.Close();
             }
                 Player_1.BackColor = Color.White;
                 Player_2.BackColor = Color.White;
@@ -541,6 +544,7 @@ namespace QuizMasters
         {
             if (full_solutions.Contains(FullAnswer.Text))
             {
+                VerifyFull.Enabled = false;
                 int pointsForNow = 4;
                 foreach(bool bl in columns)
                 {

@@ -12,13 +12,13 @@ namespace QuizMasters
         public bool locked { get; set; }
         public String prezime { get; set; }
         public int poeniVkupno { get; set; }
-        public int[] poeniPoIgra { get; set; }
+      
         public Igrach (String ime, String prezime)
         {
             this.ime = ime;
             this.prezime = prezime;
             poeniVkupno = 0;
-            poeniPoIgra = new int[4];
+            
             locked = false;
         }
     }

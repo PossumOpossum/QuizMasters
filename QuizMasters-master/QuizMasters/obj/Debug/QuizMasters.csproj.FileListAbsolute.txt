@@ -39,3 +39,4 @@ C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\
 C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.csproj.CoreCompileInputs.cache
 C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.exe
 C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.pdb
+C:\Users\Viktor\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_3.resources
