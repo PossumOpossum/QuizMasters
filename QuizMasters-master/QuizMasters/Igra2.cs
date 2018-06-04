@@ -113,7 +113,7 @@ namespace QuizMasters
             enabledForAnswering = new HashSet<int>();
             filenames = System.IO.Directory.GetFiles(@"Asocijacii");
             Random rand = new Random();
-            int file_index = rand.Next(filenames.Length);
+            int file_index = rand.Next(0, filenames.Length);
             lines = System.IO.File.ReadAllLines(filenames[file_index]);
             A_words = lines[0].Split(' ');
             A_solutions = lines[1].Split(' ');
