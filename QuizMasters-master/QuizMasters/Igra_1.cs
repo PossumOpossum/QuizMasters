@@ -95,6 +95,7 @@ namespace QuizMasters
             {
                 timer.Stop();
                 this.KeyPreview = false;
+                this.KeyPreview = false;
                 next_button.Enabled = true;
                 if (counter == endcounter)
                     next_button.Text = "Нова Игра";
