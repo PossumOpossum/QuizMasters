@@ -30,7 +30,7 @@ namespace QuizMasters
         {
             InitializeComponent();
             this.igrachi = igrachi;
-            endcounter = 1;
+            endcounter = 3;
             first_true = false;
             second_true = false;
             third_true = false;

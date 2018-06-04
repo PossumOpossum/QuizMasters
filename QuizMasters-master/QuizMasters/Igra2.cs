@@ -51,7 +51,7 @@ namespace QuizMasters
         }
         private void deservesPoints(int start, int end)
         {
-            int pointsForNow = 0;
+            int pointsForNow = 1;
             for (int i = start; i < end; i++)
             {
                 if (lockedbuttons[i] == false)
