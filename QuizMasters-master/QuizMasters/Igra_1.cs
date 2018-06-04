@@ -94,6 +94,7 @@ namespace QuizMasters
             else
             {
                 timer.Stop();
+                this.KeyPreview = false;
                 next_button.Enabled = true;
                 if (counter == endcounter)
                     next_button.Text = "Нова Игра";
@@ -135,6 +136,7 @@ namespace QuizMasters
 
         private void next_button_Click(object sender, EventArgs e)
         {
+            this.KeyPreview = true;
             if (counter == endcounter)
             {//leaderboard
                 Igra2 nova = new Igra2(igrachi);

@@ -229,7 +229,6 @@
             this.Controls.Add(this.timeleftlabel);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.Prasanje);
-            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Igra_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
