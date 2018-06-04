@@ -58,6 +58,12 @@ namespace QuizMasters
                 Application.Exit();
         }
 
-       
+        private void vnesuvanjeIgrach_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyData.Equals(Keys.Enter))
+            {
+                begin_button_Click(null, null);
+            }
+        }
     }
 }

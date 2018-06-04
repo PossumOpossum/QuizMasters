@@ -640,5 +640,35 @@ namespace QuizMasters
                 NextPlayer_Click(null, null);
             }
         }
+
+        private void Answer1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                VerifyA_Click(null, null);
+        }
+
+        private void Answer2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                VerifyB_Click(null, null);
+        }
+
+        private void Answer3_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                VerifyC_Click(null, null);
+        }
+
+        private void Answer4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                VerifyD_Click(null, null);
+        }
+
+        private void FullAnswer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                VerifyFull_Click(null, null);
+        }
     }
 }

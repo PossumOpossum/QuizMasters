@@ -499,5 +499,11 @@ namespace QuizMasters
                 kategorii[n] = value;
             }
         }
+
+        private void Odgovor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+                verify_Click(null, null);
+        }
     }
 }
