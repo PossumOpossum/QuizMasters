@@ -161,6 +161,10 @@ namespace QuizMasters
             turn = index;
             if (turn == 0)
                 turn = maxturn;
+            else
+            {
+                turn--;
+            }
             NextPlayer_Click(null,null);
         }
 

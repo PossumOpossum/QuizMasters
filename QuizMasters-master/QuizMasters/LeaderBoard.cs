@@ -15,6 +15,7 @@ namespace QuizMasters
         public LeaderBoard(List<Igrach> igrachi)
         {
             InitializeComponent();
+            igrachi = igrachi.OrderByDescending(x => x.poeniVkupno).ToList();
             foreach (Igrach igrach in igrachi)
                 listView1.Items.Add(new ListViewItem(new[] { igrach.ime, igrach.prezime, igrach.poeniVkupno.ToString() }));
             name.Width = -1;

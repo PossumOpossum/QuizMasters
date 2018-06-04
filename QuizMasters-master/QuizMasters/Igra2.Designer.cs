@@ -402,6 +402,7 @@
             this.Controls.Add(this.Player_2);
             this.Controls.Add(this.Player_1);
             this.Name = "Igra2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра 2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Igra2_FormClosing);
             this.ResumeLayout(false);
