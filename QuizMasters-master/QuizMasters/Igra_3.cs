@@ -407,7 +407,6 @@ namespace QuizMasters
             Odgovor.ReadOnly = false;
             verify.Enabled = true;
             disablePlayerChoice();
-            NextPlayer.Enabled = true;
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -417,7 +416,6 @@ namespace QuizMasters
             Odgovor.ReadOnly = false;
             verify.Enabled = true;
             disablePlayerChoice();
-            NextPlayer.Enabled = true;
         }
 
         private void button23_Click(object sender, EventArgs e)
@@ -427,7 +425,6 @@ namespace QuizMasters
             Odgovor.ReadOnly = false;
             verify.Enabled = true;
             disablePlayerChoice();
-            NextPlayer.Enabled = true;
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -437,7 +434,6 @@ namespace QuizMasters
             Odgovor.ReadOnly = false;
             verify.Enabled = true;
             disablePlayerChoice();
-            NextPlayer.Enabled = true;
         }
 
         private void verify_Click(object sender, EventArgs e)
@@ -456,6 +452,7 @@ namespace QuizMasters
                 textBox2.BackColor = Color.Red;
             }
             verify.Enabled = false;
+            NextPlayer.Enabled = true;
             bool flag = false;
             foreach (bool b in openedQuestions)
             {

@@ -30,7 +30,7 @@ namespace QuizMasters
         {
             InitializeComponent();
             this.igrachi = igrachi;
-            endcounter = 1;
+            endcounter = 3;
             first_true = false;
             second_true = false;
             third_true = false;
@@ -94,6 +94,7 @@ namespace QuizMasters
             else
             {
                 timer.Stop();
+                this.KeyPreview = false;
                 this.KeyPreview = false;
                 next_button.Enabled = true;
                 if (counter == endcounter)
