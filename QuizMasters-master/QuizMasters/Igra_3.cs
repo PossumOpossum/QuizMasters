@@ -92,7 +92,7 @@ namespace QuizMasters
             Qindex = 0;
             filenames = System.IO.Directory.GetFiles(@"Treta");
             Random rand = new Random();
-            int file_index = rand.Next(filenames.Length);
+            int file_index = rand.Next(0,filenames.Length);
             lines = System.IO.File.ReadAllLines(filenames[file_index]);
             
             odgovori = new string[20];
