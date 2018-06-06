@@ -500,7 +500,11 @@ namespace QuizMasters
         private void Odgovor_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyData.Equals(Keys.Enter))
+            {
                 verify_Click(null, null);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }
