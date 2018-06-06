@@ -112,17 +112,17 @@ namespace QuizMasters
             openedQuestions = new bool[20];
             this.igrachi = igrachi;
             player1.Text = igrachi[0].ime + " " + igrachi[0].prezime;
-            button21.Text = igrachi[0].ime + " " + igrachi[0].prezime;
+            button21.Text = igrachi[0].ime + " " + igrachi[0].prezime[0] + ".";
             player2.Text = igrachi[1].ime + " " + igrachi[1].prezime;
-            button22.Text = igrachi[1].ime + " " + igrachi[1].prezime;
+            button22.Text = igrachi[1].ime + " " + igrachi[1].prezime[0] + ".";
             if (igrachi.Count >= 3)
             {
                 player3.Text = igrachi[2].ime + " " + igrachi[2].prezime;
-                button23.Text = igrachi[2].ime + " " + igrachi[2].prezime;
+                button23.Text = igrachi[2].ime + " " + igrachi[2].prezime[0] + ".";
                 if (igrachi.Count == 4)
                 {
                     player4.Text = igrachi[3].ime + " " + igrachi[3].prezime;
-                    button24.Text = igrachi[3].ime + " " + igrachi[3].prezime;
+                    button24.Text = igrachi[3].ime + " " + igrachi[3].prezime[0] + ".";
                 }
                 else
                 {
