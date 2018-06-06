@@ -1,0 +1,187 @@
+﻿namespace QuizMasters
+{
+    partial class Igra_4
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.question = new System.Windows.Forms.TextBox();
+            this.player1 = new System.Windows.Forms.TextBox();
+            this.player2 = new System.Windows.Forms.TextBox();
+            this.player4 = new System.Windows.Forms.TextBox();
+            this.player3 = new System.Windows.Forms.TextBox();
+            this.nextQuestion = new System.Windows.Forms.Button();
+            this.leaderboard = new System.Windows.Forms.Button();
+            this.answer = new System.Windows.Forms.TextBox();
+            this.verify = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.secondsLeft = new System.Windows.Forms.Label();
+            this.isCorrect = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // question
+            // 
+            this.question.Location = new System.Drawing.Point(43, 35);
+            this.question.Name = "question";
+            this.question.ReadOnly = true;
+            this.question.Size = new System.Drawing.Size(717, 22);
+            this.question.TabIndex = 0;
+            // 
+            // player1
+            // 
+            this.player1.Location = new System.Drawing.Point(43, 94);
+            this.player1.Name = "player1";
+            this.player1.ReadOnly = true;
+            this.player1.Size = new System.Drawing.Size(265, 22);
+            this.player1.TabIndex = 1;
+            // 
+            // player2
+            // 
+            this.player2.Location = new System.Drawing.Point(43, 146);
+            this.player2.Name = "player2";
+            this.player2.ReadOnly = true;
+            this.player2.Size = new System.Drawing.Size(265, 22);
+            this.player2.TabIndex = 2;
+            // 
+            // player4
+            // 
+            this.player4.Location = new System.Drawing.Point(43, 238);
+            this.player4.Name = "player4";
+            this.player4.ReadOnly = true;
+            this.player4.Size = new System.Drawing.Size(265, 22);
+            this.player4.TabIndex = 3;
+            // 
+            // player3
+            // 
+            this.player3.Location = new System.Drawing.Point(43, 194);
+            this.player3.Name = "player3";
+            this.player3.ReadOnly = true;
+            this.player3.Size = new System.Drawing.Size(265, 22);
+            this.player3.TabIndex = 4;
+            // 
+            // nextQuestion
+            // 
+            this.nextQuestion.Location = new System.Drawing.Point(43, 395);
+            this.nextQuestion.Name = "nextQuestion";
+            this.nextQuestion.Size = new System.Drawing.Size(158, 23);
+            this.nextQuestion.TabIndex = 5;
+            this.nextQuestion.Text = "Наредно Прашање";
+            this.nextQuestion.UseVisualStyleBackColor = true;
+            this.nextQuestion.Click += new System.EventHandler(this.nextQuestion_Click);
+            // 
+            // leaderboard
+            // 
+            this.leaderboard.Location = new System.Drawing.Point(602, 395);
+            this.leaderboard.Name = "leaderboard";
+            this.leaderboard.Size = new System.Drawing.Size(158, 23);
+            this.leaderboard.TabIndex = 6;
+            this.leaderboard.Text = "Бодовна Табела";
+            this.leaderboard.UseVisualStyleBackColor = true;
+            this.leaderboard.Click += new System.EventHandler(this.leaderboard_Click);
+            // 
+            // answer
+            // 
+            this.answer.Location = new System.Drawing.Point(400, 238);
+            this.answer.Name = "answer";
+            this.answer.ReadOnly = true;
+            this.answer.Size = new System.Drawing.Size(158, 22);
+            this.answer.TabIndex = 7;
+            // 
+            // verify
+            // 
+            this.verify.Location = new System.Drawing.Point(639, 237);
+            this.verify.Name = "verify";
+            this.verify.Size = new System.Drawing.Size(75, 23);
+            this.verify.TabIndex = 8;
+            this.verify.Text = "✓";
+            this.verify.UseVisualStyleBackColor = true;
+            this.verify.Click += new System.EventHandler(this.verify_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(43, 327);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(717, 38);
+            this.progressBar1.TabIndex = 9;
+            // 
+            // secondsLeft
+            // 
+            this.secondsLeft.AutoSize = true;
+            this.secondsLeft.Location = new System.Drawing.Point(40, 286);
+            this.secondsLeft.Name = "secondsLeft";
+            this.secondsLeft.Size = new System.Drawing.Size(0, 17);
+            this.secondsLeft.TabIndex = 11;
+            // 
+            // isCorrect
+            // 
+            this.isCorrect.AutoSize = true;
+            this.isCorrect.Location = new System.Drawing.Point(400, 198);
+            this.isCorrect.Name = "isCorrect";
+            this.isCorrect.Size = new System.Drawing.Size(0, 17);
+            this.isCorrect.TabIndex = 12;
+            // 
+            // Igra_4
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.isCorrect);
+            this.Controls.Add(this.secondsLeft);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.verify);
+            this.Controls.Add(this.answer);
+            this.Controls.Add(this.leaderboard);
+            this.Controls.Add(this.nextQuestion);
+            this.Controls.Add(this.player3);
+            this.Controls.Add(this.player4);
+            this.Controls.Add(this.player2);
+            this.Controls.Add(this.player1);
+            this.Controls.Add(this.question);
+            this.Name = "Igra_4";
+            this.Text = "Igra_4";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Igra_4_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Igra_4_KeyDown);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TextBox question;
+        private System.Windows.Forms.TextBox player1;
+        private System.Windows.Forms.TextBox player2;
+        private System.Windows.Forms.TextBox player4;
+        private System.Windows.Forms.TextBox player3;
+        private System.Windows.Forms.Button nextQuestion;
+        private System.Windows.Forms.Button leaderboard;
+        private System.Windows.Forms.TextBox answer;
+        private System.Windows.Forms.Button verify;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label secondsLeft;
+        private System.Windows.Forms.Label isCorrect;
+    }
+}

@@ -37,9 +37,9 @@ namespace QuizMasters
             fourth_true = false;
             lines = System.IO.File.ReadAllLines(@"Prasanja_prva.txt");
             prasanja = new List<Prasanje_prva>();
-            secondsleft = 10;
-            progressBar1.Maximum = 10;
-            progressBar1.Value = 10;
+            secondsleft = 15;
+            progressBar1.Maximum = secondsleft;
+            progressBar1.Value = secondsleft;
             counter = 0;
             for(int i =0; i<lines.Length; i++)
             {
@@ -94,7 +94,6 @@ namespace QuizMasters
             else
             {
                 timer.Stop();
-                this.KeyPreview = false;
                 this.KeyPreview = false;
                 next_button.Enabled = true;
                 if (counter == endcounter)
@@ -172,7 +171,7 @@ namespace QuizMasters
             button4.Text = prasanja[counter].odgovori[a];
             izminati.Add(a);
 
-            secondsleft = 10;
+            secondsleft = 15;
             timeleftlabel.Text = secondsleft.ToString();
             progressBar1.Value = secondsleft;
 

@@ -88,6 +88,8 @@ namespace QuizMasters
             buttons.Add(button19);
             buttons.Add(button20);
 
+            answerLabel.Text = "";
+
             finished = false;
             Qindex = 0;
             filenames = System.IO.Directory.GetFiles(@"Treta");
@@ -170,9 +172,12 @@ namespace QuizMasters
         {
             if (finished)
             {
-
+                Igra_4 igra4 = new Igra_4(igrachi);
+                igra4.Show();
+                this.Close();
             ////nova igra                
             }
+            answerLabel.Text = "";
             Prasanje.Text = "";
             Odgovor.Text = "";
             textBox2.BackColor = Color.LightGray;
@@ -208,6 +213,7 @@ namespace QuizMasters
             button1.BackColor = Color.White;
             openedQuestions[0] = true;
             enablePlayerChoice(turn);
+            finished = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -444,6 +450,7 @@ namespace QuizMasters
                 igrachi[turn].poeniVkupno -= 3;
                 igrachi[playerAnswering].poeniVkupno += 3;
                 textBox1.BackColor = Color.LightGreen;
+                answerLabel.Text = Odgovor.Text;
             }
             else
             {

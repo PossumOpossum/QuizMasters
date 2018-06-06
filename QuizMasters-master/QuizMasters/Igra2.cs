@@ -65,6 +65,7 @@ namespace QuizMasters
             VerifyB.Enabled = false;
             VerifyC.Enabled = false;
             VerifyD.Enabled = false;
+            
             VerifyFull.Enabled = false;
         }
         private void enableAnswers()
@@ -179,6 +180,7 @@ namespace QuizMasters
             if (flag)
             {
                 disableAnswers();
+                NextPlayer.Enabled = false;
             }
             if (solved)
             {
@@ -205,7 +207,6 @@ namespace QuizMasters
             if (turn == 3)
                 Player_4.BackColor = Color.LightGreen;
 
-            NextPlayer.Enabled = false;
 
             setCLickable(true);
         }
@@ -643,7 +644,7 @@ namespace QuizMasters
 
         private void Answer1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && VerifyA.Enabled)
             {
                 VerifyA_Click(null, null);
                 e.Handled = true;
@@ -653,7 +654,7 @@ namespace QuizMasters
 
         private void Answer2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && VerifyB.Enabled)
             {
 
                 VerifyB_Click(null, null);
@@ -664,7 +665,7 @@ namespace QuizMasters
 
         private void Answer3_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && VerifyC.Enabled)
             {
                 VerifyC_Click(null, null);
                 e.Handled = true;
@@ -674,7 +675,7 @@ namespace QuizMasters
 
         private void Answer4_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && VerifyD.Enabled)
             {
                 VerifyD_Click(null, null);
                 e.Handled = true;
@@ -684,7 +685,7 @@ namespace QuizMasters
 
         private void FullAnswer_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && VerifyFull.Enabled)
             {
                 VerifyFull_Click(null, null);
                 e.Handled = true;

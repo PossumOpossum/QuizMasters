@@ -69,9 +69,8 @@
             this.timeleftlabel.AutoSize = true;
             this.timeleftlabel.Location = new System.Drawing.Point(41, 302);
             this.timeleftlabel.Name = "timeleftlabel";
-            this.timeleftlabel.Size = new System.Drawing.Size(24, 17);
+            this.timeleftlabel.Size = new System.Drawing.Size(0, 17);
             this.timeleftlabel.TabIndex = 6;
-            this.timeleftlabel.Text = "10";
             // 
             // next_button
             // 
