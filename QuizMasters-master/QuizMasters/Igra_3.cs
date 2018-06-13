@@ -452,7 +452,7 @@ namespace QuizMasters
                 igrachi[turn].poeniVkupno -= 3;
                 igrachi[playerAnswering].poeniVkupno += 3;
                 textBox1.BackColor = Color.LightGreen;
-                answerLabel.Text = Odgovor.Text;
+                answerLabel.Text = answers[0];
             }
             else
             {

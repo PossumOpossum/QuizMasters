@@ -464,7 +464,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(68, 22);
+            this.textBox2.Size = new System.Drawing.Size(89, 22);
             this.textBox2.TabIndex = 37;
             this.textBox2.Text = "погрешен";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
