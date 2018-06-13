@@ -65,5 +65,12 @@ namespace QuizMasters
                 begin_button_Click(null, null);
             }
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Start forma = new Start();
+            forma.Show();
+            this.Close();
+        }
     }
 }

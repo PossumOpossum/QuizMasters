@@ -43,6 +43,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.begin_button = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ime1
@@ -175,11 +176,22 @@
             this.begin_button.UseVisualStyleBackColor = true;
             this.begin_button.Click += new System.EventHandler(this.begin_button_Click);
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(62, 42);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(91, 30);
+            this.back.TabIndex = 15;
+            this.back.Text = "← Назад";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // vnesuvanjeIgrach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.begin_button);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -225,5 +237,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button begin_button;
+        private System.Windows.Forms.Button back;
     }
 }
