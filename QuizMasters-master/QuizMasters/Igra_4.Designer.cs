@@ -109,6 +109,7 @@
             this.answer.ReadOnly = true;
             this.answer.Size = new System.Drawing.Size(158, 22);
             this.answer.TabIndex = 7;
+            this.answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.answer_KeyDown);
             // 
             // verify
             // 

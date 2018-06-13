@@ -178,11 +178,16 @@ namespace QuizMasters
                 answer.Text = "";
                 if (queue.Count != 0)
                 {
+                    if(playerToAnswer == 0)
+                        player1.BackColor = Color.Red;
+                    if (playerToAnswer == 1)
+                        player2.BackColor = Color.Red;
+                    if (playerToAnswer == 2)
+                        player3.BackColor = Color.Red;
+                    if (playerToAnswer == 3)
+                        player4.BackColor = Color.Red;
                     playerToAnswer = queue.Dequeue();
-                    player1.BackColor = Color.White;
-                    player2.BackColor = Color.White;
-                    player3.BackColor = Color.White;
-                    player4.BackColor = Color.White;
+
                     colorField();
 
                 }
@@ -192,10 +197,10 @@ namespace QuizMasters
                     answer.Text = answersOfQuestion[0];
                     verify.Enabled = false;
                     nextQuestion.Enabled = true;
-                    player1.BackColor = Color.White;
-                    player2.BackColor = Color.White;
-                    player3.BackColor = Color.White;
-                    player4.BackColor = Color.White;
+                    player1.BackColor = Color.Red;
+                    player2.BackColor = Color.Red;
+                    player3.BackColor = Color.Red;
+                    player4.BackColor = Color.Red;
                 }
                 
             }
@@ -257,6 +262,15 @@ namespace QuizMasters
             form.Show();
         }
 
-       
+        private void answer_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyData.Equals(Keys.Enter))
+            {
+                verify_Click(null, null);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+        }
     }
 }
