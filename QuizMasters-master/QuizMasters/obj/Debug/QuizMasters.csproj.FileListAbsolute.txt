@@ -57,3 +57,4 @@ C:\Users\blablabla\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\D
 C:\Users\blablabla\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.exe
 C:\Users\blablabla\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.pdb
 C:\Users\blablabla\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_4.resources
+C:\Users\Viktor\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_4.resources

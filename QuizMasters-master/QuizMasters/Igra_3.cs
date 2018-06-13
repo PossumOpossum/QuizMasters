@@ -445,6 +445,8 @@ namespace QuizMasters
         private void verify_Click(object sender, EventArgs e)
         {
             string[] answers = odgovori[Qindex].Split(' ');
+            for (int i = 0; i < answers.Length; i++)
+                answers[i] = WhiteSpace.FIX(answers[i]);
             if (answers.Contains(Odgovor.Text))
             {
                 igrachi[turn].poeniVkupno -= 3;
@@ -457,6 +459,7 @@ namespace QuizMasters
                 igrachi[turn].poeniVkupno += 3;
                 igrachi[playerAnswering].poeniVkupno -= 3;
                 textBox2.BackColor = Color.Red;
+                answerLabel.Text = answers[0];
             }
             verify.Enabled = false;
             NextPlayer.Enabled = true;

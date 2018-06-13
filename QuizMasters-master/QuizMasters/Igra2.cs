@@ -126,10 +126,27 @@ namespace QuizMasters
             D_solutions = lines[7].Split(' ');
             full_solutions = lines[8].Split(' ');
 
+            
             A_words.ListShuffle();
             B_words.ListShuffle();
             C_words.ListShuffle();
             D_words.ListShuffle();
+            for(int i = 0; i < 4; i++)
+            {
+                A_words[i] = WhiteSpace.FIX(A_words[i]);
+                B_words[i] = WhiteSpace.FIX(B_words[i]);
+                C_words[i] = WhiteSpace.FIX(C_words[i]);
+                D_words[i] = WhiteSpace.FIX(D_words[i]);
+            }
+
+            for (int i = 0; i < A_solutions.Length; i++)
+                A_solutions[i] = WhiteSpace.FIX(A_solutions[i]);
+            for (int i = 0; i < B_solutions.Length; i++)
+                B_solutions[i] = WhiteSpace.FIX(B_solutions[i]);
+            for (int i = 0; i < C_solutions.Length; i++)
+                C_solutions[i] = WhiteSpace.FIX(C_solutions[i]);
+            for (int i = 0; i < D_solutions.Length; i++)
+                D_solutions[i] = WhiteSpace.FIX(D_solutions[i]);
 
             this.igrachi = igrachi;
             Player_1.Text = igrachi[0].ime + " " + igrachi[0].prezime;

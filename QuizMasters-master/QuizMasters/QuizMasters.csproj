@@ -92,6 +92,7 @@
     <Compile Include="vnesuvanjeIgrach.Designer.cs">
       <DependentUpon>vnesuvanjeIgrach.cs</DependentUpon>
     </Compile>
+    <Compile Include="WhiteSpace.cs" />
     <EmbeddedResource Include="Igra2.resx">
       <DependentUpon>Igra2.cs</DependentUpon>
     </EmbeddedResource>
