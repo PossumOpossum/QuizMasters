@@ -60,8 +60,10 @@ namespace QuizMasters
         String [] answers;
         String [] filenames;
         int counter;
+        private bool finished;
         public Igra_4(List<Igrach> igrachi)
         {
+            finished = false;
             questions = new String[15];
             answers = new String[15];
             counter = -1;
@@ -209,6 +211,14 @@ namespace QuizMasters
 
         private void nextQuestion_Click(object sender, EventArgs e)
         {
+            if(finished)
+            {
+                Igra_5 igra5 = new Igra_5(igrachi);
+                igra5.Show();
+                this.Close();
+            }
+            if (counter == 2)
+                finished = true;
             isCorrect.Text = "";
             answer.ReadOnly = true;
             secondsToAnswer = 10;

@@ -70,6 +70,12 @@
     <Compile Include="Igra_4.Designer.cs">
       <DependentUpon>Igra_4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Igra_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Igra_5.Designer.cs">
+      <DependentUpon>Igra_5.cs</DependentUpon>
+    </Compile>
     <Compile Include="LeaderBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Igra_4.resx">
       <DependentUpon>Igra_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Igra_5.resx">
+      <DependentUpon>Igra_5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LeaderBoard.resx">
       <DependentUpon>LeaderBoard.cs</DependentUpon>
