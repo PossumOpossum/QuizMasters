@@ -211,31 +211,34 @@ namespace QuizMasters
 
         private void nextQuestion_Click(object sender, EventArgs e)
         {
-            if(finished)
+            if (finished)
             {
                 Igra_5 igra5 = new Igra_5(igrachi);
                 igra5.Show();
                 this.Close();
             }
-            if (counter == 2)
-                finished = true;
-            isCorrect.Text = "";
-            answer.ReadOnly = true;
-            secondsToAnswer = 10;
-            answer.Text = "";
-            this.KeyPreview = true;
-            foreach (Igrach i in igrachi)
-                i.locked = false;
-            nextQuestion.Enabled = false;
-            verify.Enabled = false;
-            progressBar1.Value = secondsToAnswer;
-            secondsLeft.Text = secondsToAnswer.ToString();
-            question.Text = questions[++counter];
-            player1.BackColor = Color.White;
-            player2.BackColor = Color.White;
-            player3.BackColor = Color.White;
-            player4.BackColor = Color.White;
-            timer.Start();
+            else
+            {
+                if (counter == 0)
+                    finished = true;
+                isCorrect.Text = "";
+                answer.ReadOnly = true;
+                secondsToAnswer = 10;
+                answer.Text = "";
+                this.KeyPreview = true;
+                foreach (Igrach i in igrachi)
+                    i.locked = false;
+                nextQuestion.Enabled = false;
+                verify.Enabled = false;
+                progressBar1.Value = secondsToAnswer;
+                secondsLeft.Text = secondsToAnswer.ToString();
+                question.Text = questions[++counter];
+                player1.BackColor = Color.White;
+                player2.BackColor = Color.White;
+                player3.BackColor = Color.White;
+                player4.BackColor = Color.White;
+                timer.Start();
+            }
         }
 
         private void Igra_4_KeyDown(object sender, KeyEventArgs e)

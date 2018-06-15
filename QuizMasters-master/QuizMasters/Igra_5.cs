@@ -32,6 +32,8 @@ namespace QuizMasters
         private int c3Index;
         private int c4Index;
         private int pointsRisked;
+        private int currentCategory;
+        private int activePlayers;
         private void twowayshuffle(string[] prva, string[] vtora)
         {
             Random rng = new Random();
@@ -59,17 +61,40 @@ namespace QuizMasters
         public void enableCategories()
         {
             if (c1Index < 4)
+                category1.Enabled = true;
+            if (c2Index < 4)
                 category2.Enabled = true;
-            if (c1Index < 4)
-                category2.Enabled = true;
-            if (c1Index < 4)
+            if (c3Index < 4)
                 category3.Enabled = true;
-            if (c1Index < 4)
+            if (c4Index < 4)
                 category4.Enabled = true;
+        }
+        public void endGame()
+        {
+            Igrach pobednik = new Igrach("", "");
+            pobednik.poeniVkupno = int.MinValue;
+            if(igrachiVoIgra.Count == 1)
+            {
+                MessageBox.Show("Победник е " + igrachiVoIgra[0].ime + " " + igrachiVoIgra[0].prezime);
+                this.Close();
+            }
+            else
+            {
+                foreach(Igrach ig in igrachiVoIgra)
+                {
+                    if(ig.poeniVkupno > pobednik.poeniVkupno)
+                    {
+                        pobednik = ig;
+                    }
+                }
+                MessageBox.Show("Победник е " + pobednik.ime + " " + pobednik.prezime);
+                this.Close();
+            }
         }
         public Igra_5(List<Igrach> igrachi)
         {
             InitializeComponent();
+            activePlayers = 0;
             pointsRisked = 0;
             igrachiVoIgra = new List<Igrach>();
             for (int i = 0; i < igrachi.Count; i++)
@@ -77,11 +102,17 @@ namespace QuizMasters
                 if (igrachi[i].poeniVkupno > 0)
                 {
                     igrachiVoIgra.Add(igrachi[i]);
+                    activePlayers++;
                 }
             }
             if (igrachiVoIgra.Count == 1)
             {
-                MessageBox.Show("Pobednik e " + igrachiVoIgra[0].ime);
+                endGame();
+            }
+            if(igrachiVoIgra.Count == 0)
+            {
+                igrachiVoIgra = igrachi;
+                endGame();
             }
             this.igrachi = igrachi;
             filenames = System.IO.Directory.GetFiles(@"Petta");
@@ -200,9 +231,21 @@ namespace QuizMasters
 
         private void nextPlayer_Click(object sender, EventArgs e)
         {
+            player1.BackColor = Color.White;
+            player2.BackColor = Color.White;
+            player3.BackColor = Color.White;
+            player4.BackColor = Color.White;
+            if (c1Index > 3 && c2Index > 3 && c3Index > 3 && c4Index > 3)
+                endGame();
             turn++;
             if (turn == maxturn + 1)
                 turn = 0;
+            while (igrachiVoIgra[turn].poeniVkupno <= 0)
+            {
+                turn++;
+                if (turn == maxturn + 1)
+                    turn = 0;
+            }
 
             if (turn == 0)
                 player1.BackColor = Color.LightGreen;
@@ -238,9 +281,10 @@ namespace QuizMasters
             disableCategories();
             pointsRisked = (int)numericUpDown1.Value;
             numericUpDown1.Enabled = false;
-            question.Text = prasanja1[c1Index++];
+            question.Text = prasanja1[c1Index];
             answer.ReadOnly = false;
             verify.Enabled = true;
+            currentCategory = 1;
         }
 
         private void category2_Click(object sender, EventArgs e)
@@ -248,9 +292,10 @@ namespace QuizMasters
             disableCategories();
             pointsRisked = (int)numericUpDown1.Value;
             numericUpDown1.Enabled = false;
-            question.Text = prasanja1[c2Index++];
+            question.Text = prasanja2[c2Index];
             answer.ReadOnly = false;
             verify.Enabled = true;
+            currentCategory = 2;
         }
 
         private void category3_Click(object sender, EventArgs e)
@@ -258,9 +303,10 @@ namespace QuizMasters
             disableCategories();
             pointsRisked = (int)numericUpDown1.Value;
             numericUpDown1.Enabled = false;
-            question.Text = prasanja1[c3Index++];
+            question.Text = prasanja3[c3Index];
             answer.ReadOnly = false;
             verify.Enabled = true;
+            currentCategory = 3;
         }
 
         private void category4_Click(object sender, EventArgs e)
@@ -268,9 +314,69 @@ namespace QuizMasters
             disableCategories();
             pointsRisked = (int)numericUpDown1.Value;
             numericUpDown1.Enabled = false;
-            question.Text = prasanja1[c4Index++];
+            question.Text = prasanja4[c4Index];
             answer.ReadOnly = false;
             verify.Enabled = true;
+            currentCategory = 4;
+        }
+
+        private void verify_Click(object sender, EventArgs e)
+        {
+            string[] currentAnswers;
+            if(currentCategory == 1)
+            {
+                currentAnswers = odgovori1[c1Index++].Split(' ');
+            }
+            else if(currentCategory == 2)
+            {
+                currentAnswers = odgovori2[c2Index++].Split(' ');
+            }
+            else if(currentCategory == 3)
+            {
+                currentAnswers = odgovori3[c3Index++].Split(' '); ;
+            }
+            else
+            {
+                currentAnswers = odgovori4[c4Index++].Split(' '); ;
+            }
+            for (int i = 0; i < currentAnswers.Length; i++)
+            {
+                currentAnswers[i] = WhiteSpace.FIX(currentAnswers[i]);
+            }
+            if (currentAnswers.Contains(answer.Text.ToLower()))
+            {
+                igrachiVoIgra[turn].poeniVkupno += pointsRisked;
+            }
+            else
+            {
+                igrachiVoIgra[turn].poeniVkupno -= pointsRisked;
+                if (igrachiVoIgra[turn].poeniVkupno <= 0)
+                    activePlayers--;
+                if (activePlayers == 1)
+                    endGame();
+            }
+            answer.Text = currentAnswers[0];
+            verify.Enabled = false;
+            nextPlayer.Enabled = true;
+            answer.ReadOnly = true;
+            label1.Text = "" + igrachiVoIgra[0].poeniVkupno;
+            label2.Text = "" + igrachiVoIgra[1].poeniVkupno;
+            if(igrachiVoIgra.Count > 2)
+            {
+                label3.Text = "" + igrachiVoIgra[2].poeniVkupno;
+                if (igrachiVoIgra.Count > 3)
+                    label4.Text = "" + igrachiVoIgra[3].poeniVkupno;
+            }
+        }
+
+        private void answer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData.Equals(Keys.Enter))
+            {
+                verify_Click(null, null);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

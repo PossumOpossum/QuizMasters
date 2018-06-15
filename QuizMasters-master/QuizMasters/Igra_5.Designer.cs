@@ -223,6 +223,7 @@
             this.answer.Name = "answer";
             this.answer.Size = new System.Drawing.Size(125, 20);
             this.answer.TabIndex = 19;
+            this.answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.answer_KeyDown);
             // 
             // label7
             // 
@@ -241,6 +242,7 @@
             this.verify.TabIndex = 21;
             this.verify.Text = "✓";
             this.verify.UseVisualStyleBackColor = true;
+            this.verify.Click += new System.EventHandler(this.verify_Click);
             // 
             // Igra_5
             // 
