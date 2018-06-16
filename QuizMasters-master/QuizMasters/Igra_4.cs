@@ -249,7 +249,7 @@ namespace QuizMasters
                 player1.BackColor = Color.Yellow;
                 igrachi[0].locked = true;
             }
-            else if (e.KeyData.Equals(Keys.Z) && !igrachi[1].locked)
+            else if (e.KeyData.Equals(Keys.X) && !igrachi[1].locked)
             {
                 queue.Enqueue(1);
                 player2.BackColor = Color.Yellow;

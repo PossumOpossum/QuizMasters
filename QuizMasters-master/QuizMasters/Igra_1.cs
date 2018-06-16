@@ -251,7 +251,7 @@ namespace QuizMasters
 
         
 
-            if (e.KeyData.Equals(Keys.Z))
+            if (e.KeyData.Equals(Keys.X))
             {
                 
                 textBox2.BackColor = Color.Yellow;
@@ -264,7 +264,7 @@ namespace QuizMasters
                 igrachi[1].locked = true;
             }
 
-            if (e.KeyData.Equals(Keys.X))
+            if (e.KeyData.Equals(Keys.C))
             {
                 
                 textBox2.BackColor = Color.Yellow;
@@ -277,7 +277,7 @@ namespace QuizMasters
                 igrachi[1].locked = true;
             }
 
-            if (e.KeyData.Equals(Keys.C))
+            if (e.KeyData.Equals(Keys.V))
             {
                 
                 textBox2.BackColor = Color.Yellow;
@@ -290,7 +290,7 @@ namespace QuizMasters
                 igrachi[1].locked = true;
             }
 
-            if (e.KeyData.Equals(Keys.V))
+            if (e.KeyData.Equals(Keys.B))
             {
                 
                 textBox2.BackColor = Color.Yellow;
