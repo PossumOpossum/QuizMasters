@@ -371,7 +371,7 @@ namespace QuizMasters
 
         private void answer_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && verify.Enabled)
             {
                 verify_Click(null, null);
                 e.Handled = true;

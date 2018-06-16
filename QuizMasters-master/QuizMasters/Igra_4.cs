@@ -213,9 +213,40 @@ namespace QuizMasters
         {
             if (finished)
             {
-                Igra_5 igra5 = new Igra_5(igrachi);
-                igra5.Show();
-                this.Close();
+                int qualified = 0;
+                int help_index = 0;
+                int tempmax = -100;
+                int maxindex = 0;
+                for (int i = 0; i < igrachi.Count; i++)
+                {
+                    if (igrachi[i].poeniVkupno > 0)
+                    {
+                        qualified++;
+                        help_index = i;
+                    }
+                    if(igrachi[i].poeniVkupno > tempmax)
+                    {
+                        tempmax = igrachi[i].poeniVkupno;
+                        maxindex = i;
+                    }
+                }
+                if (qualified > 1)
+                  {
+                      Igra_5 igra5 = new Igra_5(igrachi);
+                      igra5.Show();
+                      this.Close();
+                  }
+                else if (qualified == 1)
+                  {
+                    MessageBox.Show("Победник е " + igrachi[help_index].ime + " " + igrachi[help_index].prezime);
+                    this.Close();
+                  }
+                else
+                {
+                    MessageBox.Show("Победник е " + igrachi[maxindex].ime + " " + igrachi[maxindex].prezime);
+                    this.Close();
+                }
+                
             }
             else
             {
@@ -278,7 +309,7 @@ namespace QuizMasters
         private void answer_KeyDown(object sender, KeyEventArgs e)
         {
 
-            if (e.KeyData.Equals(Keys.Enter))
+            if (e.KeyData.Equals(Keys.Enter) && verify.Enabled)
             {
                 verify_Click(null, null);
                 e.Handled = true;
