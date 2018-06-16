@@ -64,46 +64,51 @@
             // 
             // Player_1
             // 
-            this.Player_1.Location = new System.Drawing.Point(9, 10);
-            this.Player_1.Margin = new System.Windows.Forms.Padding(2);
+            this.Player_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player_1.Location = new System.Drawing.Point(54, 20);
+            this.Player_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player_1.Name = "Player_1";
             this.Player_1.ReadOnly = true;
-            this.Player_1.Size = new System.Drawing.Size(116, 20);
+            this.Player_1.Size = new System.Drawing.Size(302, 30);
             this.Player_1.TabIndex = 0;
             // 
             // Player_2
             // 
-            this.Player_2.Location = new System.Drawing.Point(161, 10);
-            this.Player_2.Margin = new System.Windows.Forms.Padding(2);
+            this.Player_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player_2.Location = new System.Drawing.Point(435, 20);
+            this.Player_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player_2.Name = "Player_2";
             this.Player_2.ReadOnly = true;
-            this.Player_2.Size = new System.Drawing.Size(116, 20);
+            this.Player_2.Size = new System.Drawing.Size(302, 30);
             this.Player_2.TabIndex = 1;
             // 
             // Player_3
             // 
-            this.Player_3.Location = new System.Drawing.Point(314, 10);
-            this.Player_3.Margin = new System.Windows.Forms.Padding(2);
+            this.Player_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player_3.Location = new System.Drawing.Point(820, 20);
+            this.Player_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player_3.Name = "Player_3";
             this.Player_3.ReadOnly = true;
-            this.Player_3.Size = new System.Drawing.Size(116, 20);
+            this.Player_3.Size = new System.Drawing.Size(302, 30);
             this.Player_3.TabIndex = 2;
             // 
             // Player_4
             // 
-            this.Player_4.Location = new System.Drawing.Point(467, 10);
-            this.Player_4.Margin = new System.Windows.Forms.Padding(2);
+            this.Player_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player_4.Location = new System.Drawing.Point(1241, 20);
+            this.Player_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player_4.Name = "Player_4";
             this.Player_4.ReadOnly = true;
-            this.Player_4.Size = new System.Drawing.Size(116, 20);
+            this.Player_4.Size = new System.Drawing.Size(302, 30);
             this.Player_4.TabIndex = 3;
             // 
             // A1
             // 
-            this.A1.Location = new System.Drawing.Point(9, 54);
-            this.A1.Margin = new System.Windows.Forms.Padding(2);
+            this.A1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A1.Location = new System.Drawing.Point(204, 139);
+            this.A1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.A1.Name = "A1";
-            this.A1.Size = new System.Drawing.Size(115, 27);
+            this.A1.Size = new System.Drawing.Size(180, 60);
             this.A1.TabIndex = 4;
             this.A1.Text = "A1";
             this.A1.UseVisualStyleBackColor = true;
@@ -111,10 +116,11 @@
             // 
             // A2
             // 
-            this.A2.Location = new System.Drawing.Point(9, 93);
-            this.A2.Margin = new System.Windows.Forms.Padding(2);
+            this.A2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A2.Location = new System.Drawing.Point(204, 236);
+            this.A2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.A2.Name = "A2";
-            this.A2.Size = new System.Drawing.Size(115, 27);
+            this.A2.Size = new System.Drawing.Size(180, 60);
             this.A2.TabIndex = 5;
             this.A2.Text = "A2";
             this.A2.UseVisualStyleBackColor = true;
@@ -122,10 +128,11 @@
             // 
             // A3
             // 
-            this.A3.Location = new System.Drawing.Point(9, 133);
-            this.A3.Margin = new System.Windows.Forms.Padding(2);
+            this.A3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A3.Location = new System.Drawing.Point(204, 346);
+            this.A3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.A3.Name = "A3";
-            this.A3.Size = new System.Drawing.Size(115, 27);
+            this.A3.Size = new System.Drawing.Size(180, 60);
             this.A3.TabIndex = 6;
             this.A3.Text = "A3";
             this.A3.UseVisualStyleBackColor = true;
@@ -133,10 +140,11 @@
             // 
             // A4
             // 
-            this.A4.Location = new System.Drawing.Point(9, 178);
-            this.A4.Margin = new System.Windows.Forms.Padding(2);
+            this.A4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.A4.Location = new System.Drawing.Point(204, 462);
+            this.A4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.A4.Name = "A4";
-            this.A4.Size = new System.Drawing.Size(115, 27);
+            this.A4.Size = new System.Drawing.Size(180, 60);
             this.A4.TabIndex = 7;
             this.A4.Text = "A4";
             this.A4.UseVisualStyleBackColor = true;
@@ -144,10 +152,11 @@
             // 
             // B1
             // 
-            this.B1.Location = new System.Drawing.Point(161, 54);
-            this.B1.Margin = new System.Windows.Forms.Padding(2);
+            this.B1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B1.Location = new System.Drawing.Point(519, 139);
+            this.B1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B1.Name = "B1";
-            this.B1.Size = new System.Drawing.Size(115, 27);
+            this.B1.Size = new System.Drawing.Size(180, 60);
             this.B1.TabIndex = 8;
             this.B1.Text = "B1";
             this.B1.UseVisualStyleBackColor = true;
@@ -155,10 +164,11 @@
             // 
             // B2
             // 
-            this.B2.Location = new System.Drawing.Point(161, 93);
-            this.B2.Margin = new System.Windows.Forms.Padding(2);
+            this.B2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B2.Location = new System.Drawing.Point(519, 236);
+            this.B2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B2.Name = "B2";
-            this.B2.Size = new System.Drawing.Size(115, 27);
+            this.B2.Size = new System.Drawing.Size(180, 60);
             this.B2.TabIndex = 9;
             this.B2.Text = "B2";
             this.B2.UseVisualStyleBackColor = true;
@@ -166,10 +176,11 @@
             // 
             // B3
             // 
-            this.B3.Location = new System.Drawing.Point(161, 133);
-            this.B3.Margin = new System.Windows.Forms.Padding(2);
+            this.B3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B3.Location = new System.Drawing.Point(519, 346);
+            this.B3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B3.Name = "B3";
-            this.B3.Size = new System.Drawing.Size(115, 27);
+            this.B3.Size = new System.Drawing.Size(180, 60);
             this.B3.TabIndex = 10;
             this.B3.Text = "B3";
             this.B3.UseVisualStyleBackColor = true;
@@ -177,10 +188,11 @@
             // 
             // B4
             // 
-            this.B4.Location = new System.Drawing.Point(161, 178);
-            this.B4.Margin = new System.Windows.Forms.Padding(2);
+            this.B4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B4.Location = new System.Drawing.Point(521, 462);
+            this.B4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.B4.Name = "B4";
-            this.B4.Size = new System.Drawing.Size(115, 27);
+            this.B4.Size = new System.Drawing.Size(180, 60);
             this.B4.TabIndex = 11;
             this.B4.Text = "B4";
             this.B4.UseVisualStyleBackColor = true;
@@ -188,10 +200,11 @@
             // 
             // C1
             // 
-            this.C1.Location = new System.Drawing.Point(314, 54);
-            this.C1.Margin = new System.Windows.Forms.Padding(2);
+            this.C1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C1.Location = new System.Drawing.Point(844, 139);
+            this.C1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.C1.Name = "C1";
-            this.C1.Size = new System.Drawing.Size(115, 27);
+            this.C1.Size = new System.Drawing.Size(180, 60);
             this.C1.TabIndex = 12;
             this.C1.Text = "C1";
             this.C1.UseVisualStyleBackColor = true;
@@ -199,10 +212,11 @@
             // 
             // C2
             // 
-            this.C2.Location = new System.Drawing.Point(314, 93);
-            this.C2.Margin = new System.Windows.Forms.Padding(2);
+            this.C2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C2.Location = new System.Drawing.Point(844, 236);
+            this.C2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.C2.Name = "C2";
-            this.C2.Size = new System.Drawing.Size(115, 27);
+            this.C2.Size = new System.Drawing.Size(180, 60);
             this.C2.TabIndex = 13;
             this.C2.Text = "C2";
             this.C2.UseVisualStyleBackColor = true;
@@ -210,10 +224,11 @@
             // 
             // C3
             // 
-            this.C3.Location = new System.Drawing.Point(314, 133);
-            this.C3.Margin = new System.Windows.Forms.Padding(2);
+            this.C3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C3.Location = new System.Drawing.Point(844, 346);
+            this.C3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.C3.Name = "C3";
-            this.C3.Size = new System.Drawing.Size(115, 27);
+            this.C3.Size = new System.Drawing.Size(180, 60);
             this.C3.TabIndex = 14;
             this.C3.Text = "C3";
             this.C3.UseVisualStyleBackColor = true;
@@ -221,10 +236,11 @@
             // 
             // C4
             // 
-            this.C4.Location = new System.Drawing.Point(314, 178);
-            this.C4.Margin = new System.Windows.Forms.Padding(2);
+            this.C4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C4.Location = new System.Drawing.Point(844, 462);
+            this.C4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.C4.Name = "C4";
-            this.C4.Size = new System.Drawing.Size(115, 27);
+            this.C4.Size = new System.Drawing.Size(180, 60);
             this.C4.TabIndex = 15;
             this.C4.Text = "C4";
             this.C4.UseVisualStyleBackColor = true;
@@ -232,10 +248,11 @@
             // 
             // D1
             // 
-            this.D1.Location = new System.Drawing.Point(467, 54);
-            this.D1.Margin = new System.Windows.Forms.Padding(2);
+            this.D1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D1.Location = new System.Drawing.Point(1155, 139);
+            this.D1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.D1.Name = "D1";
-            this.D1.Size = new System.Drawing.Size(115, 27);
+            this.D1.Size = new System.Drawing.Size(180, 60);
             this.D1.TabIndex = 16;
             this.D1.Text = "D1";
             this.D1.UseVisualStyleBackColor = true;
@@ -243,10 +260,11 @@
             // 
             // D2
             // 
-            this.D2.Location = new System.Drawing.Point(467, 93);
-            this.D2.Margin = new System.Windows.Forms.Padding(2);
+            this.D2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D2.Location = new System.Drawing.Point(1155, 236);
+            this.D2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.D2.Name = "D2";
-            this.D2.Size = new System.Drawing.Size(115, 27);
+            this.D2.Size = new System.Drawing.Size(180, 60);
             this.D2.TabIndex = 17;
             this.D2.Text = "D2";
             this.D2.UseVisualStyleBackColor = true;
@@ -254,10 +272,11 @@
             // 
             // D3
             // 
-            this.D3.Location = new System.Drawing.Point(467, 133);
-            this.D3.Margin = new System.Windows.Forms.Padding(2);
+            this.D3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D3.Location = new System.Drawing.Point(1155, 346);
+            this.D3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.D3.Name = "D3";
-            this.D3.Size = new System.Drawing.Size(115, 27);
+            this.D3.Size = new System.Drawing.Size(180, 60);
             this.D3.TabIndex = 18;
             this.D3.Text = "D3";
             this.D3.UseVisualStyleBackColor = true;
@@ -265,10 +284,11 @@
             // 
             // D4
             // 
-            this.D4.Location = new System.Drawing.Point(467, 178);
-            this.D4.Margin = new System.Windows.Forms.Padding(2);
+            this.D4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.D4.Location = new System.Drawing.Point(1155, 462);
+            this.D4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.D4.Name = "D4";
-            this.D4.Size = new System.Drawing.Size(115, 27);
+            this.D4.Size = new System.Drawing.Size(180, 60);
             this.D4.TabIndex = 19;
             this.D4.Text = "D4";
             this.D4.UseVisualStyleBackColor = true;
@@ -276,50 +296,54 @@
             // 
             // Answer1
             // 
-            this.Answer1.Location = new System.Drawing.Point(9, 227);
-            this.Answer1.Margin = new System.Windows.Forms.Padding(2);
+            this.Answer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Answer1.Location = new System.Drawing.Point(194, 569);
+            this.Answer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Answer1.Name = "Answer1";
-            this.Answer1.Size = new System.Drawing.Size(116, 20);
+            this.Answer1.Size = new System.Drawing.Size(206, 30);
             this.Answer1.TabIndex = 20;
             this.Answer1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Answer1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Answer1_KeyDown);
             // 
             // Answer2
             // 
-            this.Answer2.Location = new System.Drawing.Point(161, 227);
-            this.Answer2.Margin = new System.Windows.Forms.Padding(2);
+            this.Answer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Answer2.Location = new System.Drawing.Point(507, 569);
+            this.Answer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Answer2.Name = "Answer2";
-            this.Answer2.Size = new System.Drawing.Size(116, 20);
+            this.Answer2.Size = new System.Drawing.Size(214, 30);
             this.Answer2.TabIndex = 21;
             this.Answer2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Answer2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Answer2_KeyDown);
             // 
             // Answer3
             // 
-            this.Answer3.Location = new System.Drawing.Point(314, 227);
-            this.Answer3.Margin = new System.Windows.Forms.Padding(2);
+            this.Answer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Answer3.Location = new System.Drawing.Point(820, 569);
+            this.Answer3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Answer3.Name = "Answer3";
-            this.Answer3.Size = new System.Drawing.Size(116, 20);
+            this.Answer3.Size = new System.Drawing.Size(221, 30);
             this.Answer3.TabIndex = 22;
             this.Answer3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Answer3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Answer3_KeyDown);
             // 
             // Answer4
             // 
-            this.Answer4.Location = new System.Drawing.Point(467, 227);
-            this.Answer4.Margin = new System.Windows.Forms.Padding(2);
+            this.Answer4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Answer4.Location = new System.Drawing.Point(1134, 569);
+            this.Answer4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Answer4.Name = "Answer4";
-            this.Answer4.Size = new System.Drawing.Size(116, 20);
+            this.Answer4.Size = new System.Drawing.Size(224, 30);
             this.Answer4.TabIndex = 23;
             this.Answer4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Answer4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Answer4_KeyDown);
             // 
             // VerifyA
             // 
-            this.VerifyA.Location = new System.Drawing.Point(47, 260);
-            this.VerifyA.Margin = new System.Windows.Forms.Padding(2);
+            this.VerifyA.Location = new System.Drawing.Point(266, 612);
+            this.VerifyA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyA.Name = "VerifyA";
-            this.VerifyA.Size = new System.Drawing.Size(35, 27);
+            this.VerifyA.Size = new System.Drawing.Size(63, 43);
             this.VerifyA.TabIndex = 24;
             this.VerifyA.Text = "✓";
             this.VerifyA.UseVisualStyleBackColor = true;
@@ -327,10 +351,10 @@
             // 
             // VerifyB
             // 
-            this.VerifyB.Location = new System.Drawing.Point(202, 260);
-            this.VerifyB.Margin = new System.Windows.Forms.Padding(2);
+            this.VerifyB.Location = new System.Drawing.Point(582, 612);
+            this.VerifyB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyB.Name = "VerifyB";
-            this.VerifyB.Size = new System.Drawing.Size(35, 27);
+            this.VerifyB.Size = new System.Drawing.Size(63, 43);
             this.VerifyB.TabIndex = 25;
             this.VerifyB.Text = "✓";
             this.VerifyB.UseVisualStyleBackColor = true;
@@ -338,10 +362,10 @@
             // 
             // VerifyC
             // 
-            this.VerifyC.Location = new System.Drawing.Point(357, 260);
-            this.VerifyC.Margin = new System.Windows.Forms.Padding(2);
+            this.VerifyC.Location = new System.Drawing.Point(896, 612);
+            this.VerifyC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyC.Name = "VerifyC";
-            this.VerifyC.Size = new System.Drawing.Size(35, 27);
+            this.VerifyC.Size = new System.Drawing.Size(63, 43);
             this.VerifyC.TabIndex = 26;
             this.VerifyC.Text = "✓";
             this.VerifyC.UseVisualStyleBackColor = true;
@@ -349,10 +373,10 @@
             // 
             // VerifyD
             // 
-            this.VerifyD.Location = new System.Drawing.Point(510, 260);
-            this.VerifyD.Margin = new System.Windows.Forms.Padding(2);
+            this.VerifyD.Location = new System.Drawing.Point(1223, 612);
+            this.VerifyD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyD.Name = "VerifyD";
-            this.VerifyD.Size = new System.Drawing.Size(35, 27);
+            this.VerifyD.Size = new System.Drawing.Size(63, 43);
             this.VerifyD.TabIndex = 27;
             this.VerifyD.Text = "✓";
             this.VerifyD.UseVisualStyleBackColor = true;
@@ -360,20 +384,21 @@
             // 
             // FullAnswer
             // 
-            this.FullAnswer.Location = new System.Drawing.Point(9, 311);
-            this.FullAnswer.Margin = new System.Windows.Forms.Padding(2);
+            this.FullAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullAnswer.Location = new System.Drawing.Point(204, 683);
+            this.FullAnswer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FullAnswer.Name = "FullAnswer";
-            this.FullAnswer.Size = new System.Drawing.Size(574, 20);
+            this.FullAnswer.Size = new System.Drawing.Size(1154, 30);
             this.FullAnswer.TabIndex = 28;
             this.FullAnswer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FullAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FullAnswer_KeyDown);
             // 
             // VerifyFull
             // 
-            this.VerifyFull.Location = new System.Drawing.Point(273, 334);
-            this.VerifyFull.Margin = new System.Windows.Forms.Padding(2);
+            this.VerifyFull.Location = new System.Drawing.Point(729, 735);
+            this.VerifyFull.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.VerifyFull.Name = "VerifyFull";
-            this.VerifyFull.Size = new System.Drawing.Size(35, 27);
+            this.VerifyFull.Size = new System.Drawing.Size(78, 40);
             this.VerifyFull.TabIndex = 29;
             this.VerifyFull.Text = "✓";
             this.VerifyFull.UseVisualStyleBackColor = true;
@@ -381,10 +406,11 @@
             // 
             // NextPlayer
             // 
-            this.NextPlayer.Location = new System.Drawing.Point(9, 334);
-            this.NextPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.NextPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextPlayer.Location = new System.Drawing.Point(24, 823);
+            this.NextPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NextPlayer.Name = "NextPlayer";
-            this.NextPlayer.Size = new System.Drawing.Size(115, 27);
+            this.NextPlayer.Size = new System.Drawing.Size(201, 59);
             this.NextPlayer.TabIndex = 30;
             this.NextPlayer.Text = "Нареден Играч";
             this.NextPlayer.UseVisualStyleBackColor = true;
@@ -392,10 +418,11 @@
             // 
             // Leaderboard
             // 
-            this.Leaderboard.Location = new System.Drawing.Point(467, 334);
-            this.Leaderboard.Margin = new System.Windows.Forms.Padding(2);
+            this.Leaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Leaderboard.Location = new System.Drawing.Point(1284, 823);
+            this.Leaderboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Leaderboard.Name = "Leaderboard";
-            this.Leaderboard.Size = new System.Drawing.Size(115, 27);
+            this.Leaderboard.Size = new System.Drawing.Size(201, 59);
             this.Leaderboard.TabIndex = 31;
             this.Leaderboard.Text = "Бодовна Табела";
             this.Leaderboard.UseVisualStyleBackColor = true;
@@ -403,9 +430,9 @@
             // 
             // Igra2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(1618, 947);
             this.Controls.Add(this.Leaderboard);
             this.Controls.Add(this.NextPlayer);
             this.Controls.Add(this.VerifyFull);
@@ -438,7 +465,7 @@
             this.Controls.Add(this.Player_3);
             this.Controls.Add(this.Player_2);
             this.Controls.Add(this.Player_1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Igra2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игра 2";

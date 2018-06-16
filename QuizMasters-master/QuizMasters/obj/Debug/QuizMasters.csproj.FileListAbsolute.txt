@@ -60,3 +60,4 @@ C:\Users\blablabla\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\D
 C:\Users\Viktor\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_4.resources
 C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_4.resources
 C:\Users\FSCI\Source\Repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_5.resources
+C:\Users\Viktor\source\repos\QuizMasters\QuizMasters-master\QuizMasters\obj\Debug\QuizMasters.Igra_5.resources

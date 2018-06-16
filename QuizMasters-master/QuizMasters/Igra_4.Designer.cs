@@ -44,49 +44,55 @@
             // 
             // question
             // 
-            this.question.Location = new System.Drawing.Point(43, 35);
+            this.question.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.question.Location = new System.Drawing.Point(73, 42);
             this.question.Name = "question";
             this.question.ReadOnly = true;
-            this.question.Size = new System.Drawing.Size(717, 22);
+            this.question.Size = new System.Drawing.Size(1405, 34);
             this.question.TabIndex = 0;
             // 
             // player1
             // 
-            this.player1.Location = new System.Drawing.Point(43, 94);
+            this.player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player1.Location = new System.Drawing.Point(73, 175);
             this.player1.Name = "player1";
             this.player1.ReadOnly = true;
-            this.player1.Size = new System.Drawing.Size(265, 22);
+            this.player1.Size = new System.Drawing.Size(364, 34);
             this.player1.TabIndex = 1;
             // 
             // player2
             // 
-            this.player2.Location = new System.Drawing.Point(43, 146);
+            this.player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player2.Location = new System.Drawing.Point(73, 279);
             this.player2.Name = "player2";
             this.player2.ReadOnly = true;
-            this.player2.Size = new System.Drawing.Size(265, 22);
+            this.player2.Size = new System.Drawing.Size(364, 34);
             this.player2.TabIndex = 2;
             // 
             // player4
             // 
-            this.player4.Location = new System.Drawing.Point(43, 238);
+            this.player4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player4.Location = new System.Drawing.Point(73, 477);
             this.player4.Name = "player4";
             this.player4.ReadOnly = true;
-            this.player4.Size = new System.Drawing.Size(265, 22);
+            this.player4.Size = new System.Drawing.Size(364, 34);
             this.player4.TabIndex = 3;
             // 
             // player3
             // 
-            this.player3.Location = new System.Drawing.Point(43, 194);
+            this.player3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player3.Location = new System.Drawing.Point(73, 368);
             this.player3.Name = "player3";
             this.player3.ReadOnly = true;
-            this.player3.Size = new System.Drawing.Size(265, 22);
+            this.player3.Size = new System.Drawing.Size(364, 34);
             this.player3.TabIndex = 4;
             // 
             // nextQuestion
             // 
-            this.nextQuestion.Location = new System.Drawing.Point(43, 395);
+            this.nextQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextQuestion.Location = new System.Drawing.Point(73, 796);
             this.nextQuestion.Name = "nextQuestion";
-            this.nextQuestion.Size = new System.Drawing.Size(158, 23);
+            this.nextQuestion.Size = new System.Drawing.Size(195, 60);
             this.nextQuestion.TabIndex = 5;
             this.nextQuestion.Text = "Наредно Прашање";
             this.nextQuestion.UseVisualStyleBackColor = true;
@@ -94,9 +100,10 @@
             // 
             // leaderboard
             // 
-            this.leaderboard.Location = new System.Drawing.Point(602, 395);
+            this.leaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leaderboard.Location = new System.Drawing.Point(1283, 796);
             this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Size = new System.Drawing.Size(158, 23);
+            this.leaderboard.Size = new System.Drawing.Size(195, 60);
             this.leaderboard.TabIndex = 6;
             this.leaderboard.Text = "Бодовна Табела";
             this.leaderboard.UseVisualStyleBackColor = true;
@@ -104,18 +111,19 @@
             // 
             // answer
             // 
-            this.answer.Location = new System.Drawing.Point(400, 238);
+            this.answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answer.Location = new System.Drawing.Point(831, 368);
             this.answer.Name = "answer";
             this.answer.ReadOnly = true;
-            this.answer.Size = new System.Drawing.Size(158, 22);
+            this.answer.Size = new System.Drawing.Size(229, 30);
             this.answer.TabIndex = 7;
             this.answer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.answer_KeyDown);
             // 
             // verify
             // 
-            this.verify.Location = new System.Drawing.Point(639, 237);
+            this.verify.Location = new System.Drawing.Point(1140, 367);
             this.verify.Name = "verify";
-            this.verify.Size = new System.Drawing.Size(75, 23);
+            this.verify.Size = new System.Drawing.Size(76, 31);
             this.verify.TabIndex = 8;
             this.verify.Text = "✓";
             this.verify.UseVisualStyleBackColor = true;
@@ -123,32 +131,34 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(43, 327);
+            this.progressBar1.Location = new System.Drawing.Point(73, 684);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(717, 38);
+            this.progressBar1.Size = new System.Drawing.Size(1405, 38);
             this.progressBar1.TabIndex = 9;
             // 
             // secondsLeft
             // 
             this.secondsLeft.AutoSize = true;
-            this.secondsLeft.Location = new System.Drawing.Point(40, 286);
+            this.secondsLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.secondsLeft.Location = new System.Drawing.Point(70, 642);
             this.secondsLeft.Name = "secondsLeft";
-            this.secondsLeft.Size = new System.Drawing.Size(0, 17);
+            this.secondsLeft.Size = new System.Drawing.Size(0, 25);
             this.secondsLeft.TabIndex = 11;
             // 
             // isCorrect
             // 
             this.isCorrect.AutoSize = true;
-            this.isCorrect.Location = new System.Drawing.Point(400, 198);
+            this.isCorrect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.isCorrect.Location = new System.Drawing.Point(826, 315);
             this.isCorrect.Name = "isCorrect";
-            this.isCorrect.Size = new System.Drawing.Size(0, 17);
+            this.isCorrect.Size = new System.Drawing.Size(0, 25);
             this.isCorrect.TabIndex = 12;
             // 
             // Igra_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1618, 947);
             this.Controls.Add(this.isCorrect);
             this.Controls.Add(this.secondsLeft);
             this.Controls.Add(this.progressBar1);
@@ -162,6 +172,7 @@
             this.Controls.Add(this.player1);
             this.Controls.Add(this.question);
             this.Name = "Igra_4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Igra_4";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Igra_4_FormClosing);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Igra_4_KeyDown);

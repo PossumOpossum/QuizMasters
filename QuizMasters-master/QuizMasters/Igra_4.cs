@@ -146,7 +146,7 @@ namespace QuizMasters
                     answer.ReadOnly = true;
                     isCorrect.Text = "Точниот одговор е:";
                     string[] answersOfAnswer = answers[counter].Split(' ');
-                    answer.Text = answersOfAnswer[0];
+                    answer.Text = WhiteSpace.FIX(answersOfAnswer[0]);
                     nextQuestion.Enabled = true;
                 }
             }

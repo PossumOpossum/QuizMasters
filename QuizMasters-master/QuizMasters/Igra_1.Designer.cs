@@ -49,35 +49,37 @@
             // 
             // Prasanje
             // 
-            this.Prasanje.Location = new System.Drawing.Point(41, 50);
+            this.Prasanje.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Prasanje.Location = new System.Drawing.Point(132, 47);
             this.Prasanje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Prasanje.Name = "Prasanje";
             this.Prasanje.ReadOnly = true;
-            this.Prasanje.Size = new System.Drawing.Size(723, 22);
+            this.Prasanje.Size = new System.Drawing.Size(1263, 34);
             this.Prasanje.TabIndex = 0;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(41, 322);
+            this.progressBar1.Location = new System.Drawing.Point(45, 686);
             this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(723, 34);
+            this.progressBar1.Size = new System.Drawing.Size(1434, 46);
             this.progressBar1.TabIndex = 5;
             // 
             // timeleftlabel
             // 
             this.timeleftlabel.AutoSize = true;
-            this.timeleftlabel.Location = new System.Drawing.Point(41, 302);
+            this.timeleftlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeleftlabel.Location = new System.Drawing.Point(42, 652);
             this.timeleftlabel.Name = "timeleftlabel";
-            this.timeleftlabel.Size = new System.Drawing.Size(0, 17);
+            this.timeleftlabel.Size = new System.Drawing.Size(0, 25);
             this.timeleftlabel.TabIndex = 6;
             // 
             // next_button
             // 
-            this.next_button.Location = new System.Drawing.Point(44, 398);
+            this.next_button.Location = new System.Drawing.Point(41, 791);
             this.next_button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.next_button.Name = "next_button";
-            this.next_button.Size = new System.Drawing.Size(156, 39);
+            this.next_button.Size = new System.Drawing.Size(221, 65);
             this.next_button.TabIndex = 7;
             this.next_button.Text = "Наредно прашање";
             this.next_button.UseVisualStyleBackColor = true;
@@ -86,42 +88,46 @@
             // igrach1Label
             // 
             this.igrach1Label.AutoSize = true;
-            this.igrach1Label.Location = new System.Drawing.Point(272, 123);
+            this.igrach1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.igrach1Label.Location = new System.Drawing.Point(416, 249);
             this.igrach1Label.Name = "igrach1Label";
-            this.igrach1Label.Size = new System.Drawing.Size(16, 17);
+            this.igrach1Label.Size = new System.Drawing.Size(23, 25);
             this.igrach1Label.TabIndex = 10;
             this.igrach1Label.Text = "1";
             // 
             // igrach2Label
             // 
             this.igrach2Label.AutoSize = true;
-            this.igrach2Label.Location = new System.Drawing.Point(272, 166);
+            this.igrach2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.igrach2Label.Location = new System.Drawing.Point(416, 292);
             this.igrach2Label.Name = "igrach2Label";
-            this.igrach2Label.Size = new System.Drawing.Size(16, 17);
+            this.igrach2Label.Size = new System.Drawing.Size(23, 25);
             this.igrach2Label.TabIndex = 11;
             this.igrach2Label.Text = "2";
             // 
             // igrach3Label
             // 
             this.igrach3Label.AutoSize = true;
-            this.igrach3Label.Location = new System.Drawing.Point(272, 205);
+            this.igrach3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.igrach3Label.Location = new System.Drawing.Point(416, 331);
             this.igrach3Label.Name = "igrach3Label";
-            this.igrach3Label.Size = new System.Drawing.Size(16, 17);
+            this.igrach3Label.Size = new System.Drawing.Size(23, 25);
             this.igrach3Label.TabIndex = 12;
             this.igrach3Label.Text = "3";
             // 
             // igrach4Label
             // 
             this.igrach4Label.AutoSize = true;
-            this.igrach4Label.Location = new System.Drawing.Point(272, 240);
+            this.igrach4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.igrach4Label.Location = new System.Drawing.Point(416, 366);
             this.igrach4Label.Name = "igrach4Label";
-            this.igrach4Label.Size = new System.Drawing.Size(16, 17);
+            this.igrach4Label.Size = new System.Drawing.Size(23, 25);
             this.igrach4Label.TabIndex = 13;
             this.igrach4Label.Text = "4";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(437, 118);
+            this.textBox1.Location = new System.Drawing.Point(731, 249);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -130,7 +136,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(437, 161);
+            this.textBox2.Location = new System.Drawing.Point(731, 292);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -139,7 +145,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(437, 200);
+            this.textBox3.Location = new System.Drawing.Point(731, 331);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -148,7 +154,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(437, 235);
+            this.textBox4.Location = new System.Drawing.Point(731, 366);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -157,50 +163,54 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(45, 123);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(132, 236);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.ReadOnly = true;
-            this.button1.Size = new System.Drawing.Size(184, 22);
+            this.button1.Size = new System.Drawing.Size(213, 34);
             this.button1.TabIndex = 18;
             this.button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(579, 118);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(1173, 236);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.ReadOnly = true;
-            this.button2.Size = new System.Drawing.Size(184, 22);
+            this.button2.Size = new System.Drawing.Size(213, 34);
             this.button2.TabIndex = 19;
             this.button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(45, 214);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(132, 394);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.ReadOnly = true;
-            this.button3.Size = new System.Drawing.Size(184, 22);
+            this.button3.Size = new System.Drawing.Size(213, 34);
             this.button3.TabIndex = 20;
             this.button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(580, 214);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(1173, 394);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.ReadOnly = true;
-            this.button4.Size = new System.Drawing.Size(184, 22);
+            this.button4.Size = new System.Drawing.Size(213, 34);
             this.button4.TabIndex = 21;
             this.button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // leaderboard
             // 
-            this.leaderboard.Location = new System.Drawing.Point(629, 404);
+            this.leaderboard.Location = new System.Drawing.Point(1258, 791);
             this.leaderboard.Margin = new System.Windows.Forms.Padding(4);
             this.leaderboard.Name = "leaderboard";
-            this.leaderboard.Size = new System.Drawing.Size(135, 33);
+            this.leaderboard.Size = new System.Drawing.Size(221, 65);
             this.leaderboard.TabIndex = 22;
             this.leaderboard.Text = "Бодовна табела";
             this.leaderboard.UseVisualStyleBackColor = true;
@@ -210,7 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1618, 947);
             this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
