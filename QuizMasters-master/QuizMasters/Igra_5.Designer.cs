@@ -56,7 +56,7 @@
             // 
             this.player1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player1.Location = new System.Drawing.Point(38, 13);
-            this.player1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player1.Margin = new System.Windows.Forms.Padding(4);
             this.player1.Name = "player1";
             this.player1.ReadOnly = true;
             this.player1.Size = new System.Drawing.Size(204, 30);
@@ -66,7 +66,7 @@
             // 
             this.player2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player2.Location = new System.Drawing.Point(446, 13);
-            this.player2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player2.Margin = new System.Windows.Forms.Padding(4);
             this.player2.Name = "player2";
             this.player2.ReadOnly = true;
             this.player2.Size = new System.Drawing.Size(204, 30);
@@ -76,7 +76,7 @@
             // 
             this.player4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player4.Location = new System.Drawing.Point(1305, 15);
-            this.player4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player4.Margin = new System.Windows.Forms.Padding(4);
             this.player4.Name = "player4";
             this.player4.ReadOnly = true;
             this.player4.Size = new System.Drawing.Size(204, 30);
@@ -86,7 +86,7 @@
             // 
             this.player3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player3.Location = new System.Drawing.Point(908, 15);
-            this.player3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player3.Margin = new System.Windows.Forms.Padding(4);
             this.player3.Name = "player3";
             this.player3.ReadOnly = true;
             this.player3.Size = new System.Drawing.Size(204, 30);
@@ -96,7 +96,7 @@
             // 
             this.question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.question.Location = new System.Drawing.Point(69, 546);
-            this.question.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.question.Margin = new System.Windows.Forms.Padding(4);
             this.question.Name = "question";
             this.question.ReadOnly = true;
             this.question.Size = new System.Drawing.Size(1360, 30);
@@ -106,7 +106,7 @@
             // 
             this.category1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category1.Location = new System.Drawing.Point(69, 367);
-            this.category1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category1.Margin = new System.Windows.Forms.Padding(4);
             this.category1.Name = "category1";
             this.category1.Size = new System.Drawing.Size(300, 97);
             this.category1.TabIndex = 5;
@@ -161,7 +161,7 @@
             // 
             this.category2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category2.Location = new System.Drawing.Point(407, 367);
-            this.category2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category2.Margin = new System.Windows.Forms.Padding(4);
             this.category2.Name = "category2";
             this.category2.Size = new System.Drawing.Size(300, 97);
             this.category2.TabIndex = 11;
@@ -173,7 +173,7 @@
             // 
             this.category3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category3.Location = new System.Drawing.Point(759, 367);
-            this.category3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category3.Margin = new System.Windows.Forms.Padding(4);
             this.category3.Name = "category3";
             this.category3.Size = new System.Drawing.Size(300, 97);
             this.category3.TabIndex = 12;
@@ -185,7 +185,7 @@
             // 
             this.category4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category4.Location = new System.Drawing.Point(1129, 367);
-            this.category4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category4.Margin = new System.Windows.Forms.Padding(4);
             this.category4.Name = "category4";
             this.category4.Size = new System.Drawing.Size(300, 97);
             this.category4.TabIndex = 13;
@@ -197,7 +197,7 @@
             // 
             this.nextPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nextPlayer.Location = new System.Drawing.Point(69, 799);
-            this.nextPlayer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nextPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.nextPlayer.Name = "nextPlayer";
             this.nextPlayer.Size = new System.Drawing.Size(200, 64);
             this.nextPlayer.TabIndex = 14;
@@ -209,7 +209,7 @@
             // 
             this.leaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leaderboard.Location = new System.Drawing.Point(1199, 799);
-            this.leaderboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.leaderboard.Margin = new System.Windows.Forms.Padding(4);
             this.leaderboard.Name = "leaderboard";
             this.leaderboard.Size = new System.Drawing.Size(230, 64);
             this.leaderboard.TabIndex = 15;
@@ -231,7 +231,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(797, 190);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Minimum = new decimal(new int[] {
             1,
             0,
@@ -261,7 +261,7 @@
             // 
             this.answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answer.Location = new System.Drawing.Point(417, 656);
-            this.answer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.answer.Margin = new System.Windows.Forms.Padding(4);
             this.answer.Name = "answer";
             this.answer.Size = new System.Drawing.Size(233, 30);
             this.answer.TabIndex = 19;
@@ -281,7 +281,7 @@
             // verify
             // 
             this.verify.Location = new System.Drawing.Point(696, 656);
-            this.verify.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.verify.Margin = new System.Windows.Forms.Padding(4);
             this.verify.Name = "verify";
             this.verify.Size = new System.Drawing.Size(70, 30);
             this.verify.TabIndex = 21;
@@ -293,6 +293,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
             this.Controls.Add(this.verify);
             this.Controls.Add(this.label7);
@@ -315,7 +316,7 @@
             this.Controls.Add(this.player4);
             this.Controls.Add(this.player2);
             this.Controls.Add(this.player1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Igra_5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Igra_5";
