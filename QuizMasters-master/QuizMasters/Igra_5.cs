@@ -231,6 +231,10 @@ namespace QuizMasters
 
         private void nextPlayer_Click(object sender, EventArgs e)
         {
+            ostanatiA.Text = (4 - c1Index).ToString();
+            ostanatiB.Text = (4 - c2Index).ToString();
+            ostanatiC.Text = (4 - c3Index).ToString();
+            ostanatiD.Text = (4 - c4Index).ToString();
             player1.BackColor = Color.White;
             player2.BackColor = Color.White;
             player3.BackColor = Color.White;

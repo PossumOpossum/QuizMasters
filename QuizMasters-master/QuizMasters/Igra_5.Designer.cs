@@ -49,6 +49,10 @@
             this.answer = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.verify = new System.Windows.Forms.Button();
+            this.ostanatiA = new System.Windows.Forms.Label();
+            this.ostanatiB = new System.Windows.Forms.Label();
+            this.ostanatiC = new System.Windows.Forms.Label();
+            this.ostanatiD = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -289,12 +293,48 @@
             this.verify.UseVisualStyleBackColor = true;
             this.verify.Click += new System.EventHandler(this.verify_Click);
             // 
+            // ostanatiA
+            // 
+            this.ostanatiA.AutoSize = true;
+            this.ostanatiA.Location = new System.Drawing.Point(211, 472);
+            this.ostanatiA.Name = "ostanatiA";
+            this.ostanatiA.Size = new System.Drawing.Size(0, 17);
+            this.ostanatiA.TabIndex = 22;
+            // 
+            // ostanatiB
+            // 
+            this.ostanatiB.AutoSize = true;
+            this.ostanatiB.Location = new System.Drawing.Point(551, 472);
+            this.ostanatiB.Name = "ostanatiB";
+            this.ostanatiB.Size = new System.Drawing.Size(0, 17);
+            this.ostanatiB.TabIndex = 23;
+            // 
+            // ostanatiC
+            // 
+            this.ostanatiC.AutoSize = true;
+            this.ostanatiC.Location = new System.Drawing.Point(897, 472);
+            this.ostanatiC.Name = "ostanatiC";
+            this.ostanatiC.Size = new System.Drawing.Size(0, 17);
+            this.ostanatiC.TabIndex = 24;
+            // 
+            // ostanatiD
+            // 
+            this.ostanatiD.AutoSize = true;
+            this.ostanatiD.Location = new System.Drawing.Point(1264, 472);
+            this.ostanatiD.Name = "ostanatiD";
+            this.ostanatiD.Size = new System.Drawing.Size(0, 17);
+            this.ostanatiD.TabIndex = 25;
+            // 
             // Igra_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
+            this.Controls.Add(this.ostanatiD);
+            this.Controls.Add(this.ostanatiC);
+            this.Controls.Add(this.ostanatiB);
+            this.Controls.Add(this.ostanatiA);
             this.Controls.Add(this.verify);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.answer);
@@ -350,5 +390,9 @@
         private System.Windows.Forms.TextBox answer;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button verify;
+        private System.Windows.Forms.Label ostanatiA;
+        private System.Windows.Forms.Label ostanatiB;
+        private System.Windows.Forms.Label ostanatiC;
+        private System.Windows.Forms.Label ostanatiD;
     }
 }

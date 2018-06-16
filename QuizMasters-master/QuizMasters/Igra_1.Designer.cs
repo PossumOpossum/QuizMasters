@@ -89,7 +89,7 @@
             // 
             this.igrach1Label.AutoSize = true;
             this.igrach1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igrach1Label.Location = new System.Drawing.Point(416, 249);
+            this.igrach1Label.Location = new System.Drawing.Point(535, 246);
             this.igrach1Label.Name = "igrach1Label";
             this.igrach1Label.Size = new System.Drawing.Size(23, 25);
             this.igrach1Label.TabIndex = 10;
@@ -99,7 +99,7 @@
             // 
             this.igrach2Label.AutoSize = true;
             this.igrach2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igrach2Label.Location = new System.Drawing.Point(416, 292);
+            this.igrach2Label.Location = new System.Drawing.Point(535, 289);
             this.igrach2Label.Name = "igrach2Label";
             this.igrach2Label.Size = new System.Drawing.Size(23, 25);
             this.igrach2Label.TabIndex = 11;
@@ -109,7 +109,7 @@
             // 
             this.igrach3Label.AutoSize = true;
             this.igrach3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igrach3Label.Location = new System.Drawing.Point(416, 331);
+            this.igrach3Label.Location = new System.Drawing.Point(535, 328);
             this.igrach3Label.Name = "igrach3Label";
             this.igrach3Label.Size = new System.Drawing.Size(23, 25);
             this.igrach3Label.TabIndex = 12;
@@ -119,7 +119,7 @@
             // 
             this.igrach4Label.AutoSize = true;
             this.igrach4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.igrach4Label.Location = new System.Drawing.Point(416, 366);
+            this.igrach4Label.Location = new System.Drawing.Point(535, 363);
             this.igrach4Label.Name = "igrach4Label";
             this.igrach4Label.Size = new System.Drawing.Size(23, 25);
             this.igrach4Label.TabIndex = 13;
@@ -127,7 +127,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(731, 249);
+            this.textBox1.Location = new System.Drawing.Point(850, 246);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -136,7 +136,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(731, 292);
+            this.textBox2.Location = new System.Drawing.Point(850, 289);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -145,7 +145,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(731, 331);
+            this.textBox3.Location = new System.Drawing.Point(850, 328);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -154,7 +154,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(731, 366);
+            this.textBox4.Location = new System.Drawing.Point(850, 363);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -168,18 +168,18 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.ReadOnly = true;
-            this.button1.Size = new System.Drawing.Size(213, 34);
+            this.button1.Size = new System.Drawing.Size(298, 34);
             this.button1.TabIndex = 18;
             this.button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1173, 236);
+            this.button2.Location = new System.Drawing.Point(1097, 236);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.ReadOnly = true;
-            this.button2.Size = new System.Drawing.Size(213, 34);
+            this.button2.Size = new System.Drawing.Size(298, 34);
             this.button2.TabIndex = 19;
             this.button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -190,18 +190,18 @@
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.ReadOnly = true;
-            this.button3.Size = new System.Drawing.Size(213, 34);
+            this.button3.Size = new System.Drawing.Size(298, 34);
             this.button3.TabIndex = 20;
             this.button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1173, 394);
+            this.button4.Location = new System.Drawing.Point(1097, 394);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.ReadOnly = true;
-            this.button4.Size = new System.Drawing.Size(213, 34);
+            this.button4.Size = new System.Drawing.Size(298, 34);
             this.button4.TabIndex = 21;
             this.button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
