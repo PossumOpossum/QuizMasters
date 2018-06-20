@@ -53,6 +53,7 @@
             this.ostanatiB = new System.Windows.Forms.Label();
             this.ostanatiC = new System.Windows.Forms.Label();
             this.ostanatiD = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -325,12 +326,25 @@
             this.ostanatiD.Size = new System.Drawing.Size(0, 17);
             this.ostanatiD.TabIndex = 25;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(633, 799);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 64);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Упатство";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Igra_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ostanatiD);
             this.Controls.Add(this.ostanatiC);
             this.Controls.Add(this.ostanatiB);
@@ -394,5 +408,6 @@
         private System.Windows.Forms.Label ostanatiB;
         private System.Windows.Forms.Label ostanatiC;
         private System.Windows.Forms.Label ostanatiD;
+        private System.Windows.Forms.Button button1;
     }
 }

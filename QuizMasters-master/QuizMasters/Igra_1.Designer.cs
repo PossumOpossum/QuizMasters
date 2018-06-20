@@ -45,6 +45,7 @@
             this.button3 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.TextBox();
             this.leaderboard = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Prasanje
@@ -216,12 +217,24 @@
             this.leaderboard.UseVisualStyleBackColor = true;
             this.leaderboard.Click += new System.EventHandler(this.leaderboard_Click);
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(621, 791);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(221, 65);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Упатство";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Igra_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.leaderboard);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -269,5 +282,6 @@
         private System.Windows.Forms.TextBox button3;
         private System.Windows.Forms.TextBox button4;
         private System.Windows.Forms.Button leaderboard;
+        private System.Windows.Forms.Button button5;
     }
 }

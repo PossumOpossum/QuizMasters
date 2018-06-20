@@ -67,6 +67,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.answerLabel = new System.Windows.Forms.Label();
+            this.button25 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -516,12 +517,25 @@
             this.answerLabel.TabIndex = 38;
             this.answerLabel.Text = "label4";
             // 
+            // button25
+            // 
+            this.button25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button25.Location = new System.Drawing.Point(661, 829);
+            this.button25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(199, 65);
+            this.button25.TabIndex = 39;
+            this.button25.Text = "Упатство";
+            this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
             // Igra_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
+            this.Controls.Add(this.button25);
             this.Controls.Add(this.answerLabel);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -612,5 +626,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label answerLabel;
+        private System.Windows.Forms.Button button25;
     }
 }

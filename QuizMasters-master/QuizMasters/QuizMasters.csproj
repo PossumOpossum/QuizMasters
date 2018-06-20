@@ -52,6 +52,12 @@
       <DependentUpon>Igra2.cs</DependentUpon>
     </Compile>
     <Compile Include="Igrach.cs" />
+    <Compile Include="Upatstvo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upatstvo.Designer.cs">
+      <DependentUpon>Upatstvo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Igra_1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     <Compile Include="WhiteSpace.cs" />
     <EmbeddedResource Include="Igra2.resx">
       <DependentUpon>Igra2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upatstvo.resx">
+      <DependentUpon>Upatstvo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Igra_1.resx">
       <DependentUpon>Igra_1.cs</DependentUpon>

@@ -40,6 +40,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.secondsLeft = new System.Windows.Forms.Label();
             this.isCorrect = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // question
@@ -154,12 +155,24 @@
             this.isCorrect.Size = new System.Drawing.Size(0, 25);
             this.isCorrect.TabIndex = 12;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(646, 796);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(195, 60);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Упатство";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Igra_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1618, 947);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.isCorrect);
             this.Controls.Add(this.secondsLeft);
             this.Controls.Add(this.progressBar1);
@@ -196,5 +209,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label secondsLeft;
         private System.Windows.Forms.Label isCorrect;
+        private System.Windows.Forms.Button button1;
     }
 }
