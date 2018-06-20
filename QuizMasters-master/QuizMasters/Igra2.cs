@@ -418,7 +418,7 @@ namespace QuizMasters
 
         private void VerifyA_Click(object sender, EventArgs e)
         {
-            if (A_solutions.Contains(Answer1.Text))
+            if (A_solutions.Contains(Answer1.Text.ToLower()))
             {
                 enabledForAnswering.Remove(0);
                 enabledForAnswering.Add(4);
@@ -454,7 +454,7 @@ namespace QuizMasters
 
         private void VerifyB_Click(object sender, EventArgs e)
         {
-            if (B_solutions.Contains(Answer2.Text))
+            if (B_solutions.Contains(Answer2.Text.ToLower()))
             {
                 enabledForAnswering.Remove(1);
                 enabledForAnswering.Add(4);
@@ -490,7 +490,7 @@ namespace QuizMasters
 
         private void VerifyC_Click(object sender, EventArgs e)
         {
-            if (C_solutions.Contains(Answer3.Text))
+            if (C_solutions.Contains(Answer3.Text.ToLower()))
             {
                 enabledForAnswering.Remove(2);
                 enabledForAnswering.Add(4);
@@ -525,7 +525,7 @@ namespace QuizMasters
 
         private void VerifyD_Click(object sender, EventArgs e)
         {
-            if (D_solutions.Contains(Answer4.Text))
+            if (D_solutions.Contains(Answer4.Text.ToLower()))
             {
                 enabledForAnswering.Remove(3);
                 enabledForAnswering.Add(4);
@@ -560,7 +560,7 @@ namespace QuizMasters
 
         private void VerifyFull_Click(object sender, EventArgs e)
         {
-            if (full_solutions.Contains(FullAnswer.Text))
+            if (full_solutions.Contains(FullAnswer.Text.ToLower()))
             {
                 VerifyFull.Enabled = false;
                 int pointsForNow = 4;

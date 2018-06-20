@@ -164,7 +164,7 @@ namespace QuizMasters
             String[] answersOfQuestion = answers[counter].Split(' ');
             for (int i = 0; i < answersOfQuestion.Length; i++)
                 answersOfQuestion[i] = WhiteSpace.FIX(answersOfQuestion[i]);
-            if (answersOfQuestion.Contains(answer.Text))
+            if (answersOfQuestion.Contains(answer.Text.ToLower()))
             {
                 answer.ReadOnly = true;
                 igrachi[playerToAnswer].poeniVkupno += 3;

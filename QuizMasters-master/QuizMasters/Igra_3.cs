@@ -114,17 +114,17 @@ namespace QuizMasters
             openedQuestions = new bool[20];
             this.igrachi = igrachi;
             player1.Text = igrachi[0].ime + " " + igrachi[0].prezime;
-            button21.Text = igrachi[0].ime + " " + igrachi[0].prezime[0] + ".";
+            button21.Text = igrachi[0].ime + " " + igrachi[0].prezime;
             player2.Text = igrachi[1].ime + " " + igrachi[1].prezime;
-            button22.Text = igrachi[1].ime + " " + igrachi[1].prezime[0] + ".";
+            button22.Text = igrachi[1].ime + " " + igrachi[1].prezime;
             if (igrachi.Count >= 3)
             {
                 player3.Text = igrachi[2].ime + " " + igrachi[2].prezime;
-                button23.Text = igrachi[2].ime + " " + igrachi[2].prezime[0] + ".";
+                button23.Text = igrachi[2].ime + " " + igrachi[2].prezime;
                 if (igrachi.Count == 4)
                 {
                     player4.Text = igrachi[3].ime + " " + igrachi[3].prezime;
-                    button24.Text = igrachi[3].ime + " " + igrachi[3].prezime[0] + ".";
+                    button24.Text = igrachi[3].ime + " " + igrachi[3].prezime;
                 }
                 else
                 {
@@ -447,7 +447,7 @@ namespace QuizMasters
             string[] answers = odgovori[Qindex].Split(' ');
             for (int i = 0; i < answers.Length; i++)
                 answers[i] = WhiteSpace.FIX(answers[i]);
-            if (answers.Contains(Odgovor.Text))
+            if (answers.Contains(Odgovor.Text.ToLower()))
             {
                 igrachi[turn].poeniVkupno -= 3;
                 igrachi[playerAnswering].poeniVkupno += 3;

@@ -391,11 +391,12 @@
             // 
             // button21
             // 
+            this.button21.AutoSize = true;
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(1053, 646);
+            this.button21.Location = new System.Drawing.Point(1007, 630);
             this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(216, 39);
+            this.button21.Size = new System.Drawing.Size(215, 60);
             this.button21.TabIndex = 28;
             this.button21.Text = "button21";
             this.button21.UseVisualStyleBackColor = true;
@@ -404,10 +405,10 @@
             // button22
             // 
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Location = new System.Drawing.Point(1283, 646);
+            this.button22.Location = new System.Drawing.Point(1284, 630);
             this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(216, 39);
+            this.button22.Size = new System.Drawing.Size(215, 60);
             this.button22.TabIndex = 29;
             this.button22.Text = "button22";
             this.button22.UseVisualStyleBackColor = true;
@@ -416,10 +417,10 @@
             // button23
             // 
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button23.Location = new System.Drawing.Point(1053, 708);
+            this.button23.Location = new System.Drawing.Point(1007, 740);
             this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(216, 39);
+            this.button23.Size = new System.Drawing.Size(215, 60);
             this.button23.TabIndex = 30;
             this.button23.Text = "button23";
             this.button23.UseVisualStyleBackColor = true;
@@ -428,10 +429,10 @@
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button24.Location = new System.Drawing.Point(1282, 706);
+            this.button24.Location = new System.Drawing.Point(1284, 740);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(216, 39);
+            this.button24.Size = new System.Drawing.Size(215, 60);
             this.button24.TabIndex = 31;
             this.button24.Text = "button24";
             this.button24.UseVisualStyleBackColor = true;
@@ -441,7 +442,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(816, 654);
+            this.label2.Location = new System.Drawing.Point(754, 634);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(234, 20);
             this.label2.TabIndex = 32;
@@ -450,7 +451,7 @@
             // NextPlayer
             // 
             this.NextPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextPlayer.Location = new System.Drawing.Point(44, 805);
+            this.NextPlayer.Location = new System.Drawing.Point(62, 829);
             this.NextPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NextPlayer.Name = "NextPlayer";
             this.NextPlayer.Size = new System.Drawing.Size(199, 65);
@@ -462,7 +463,7 @@
             // Leaderboard
             // 
             this.Leaderboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Leaderboard.Location = new System.Drawing.Point(1233, 805);
+            this.Leaderboard.Location = new System.Drawing.Point(1300, 829);
             this.Leaderboard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Leaderboard.Name = "Leaderboard";
             this.Leaderboard.Size = new System.Drawing.Size(199, 65);
