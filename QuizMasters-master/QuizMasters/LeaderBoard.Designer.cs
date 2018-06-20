@@ -41,9 +41,10 @@
             this.surname,
             this.points});
             this.listView1.GridLines = true;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(32, 29);
+            this.listView1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(366, 272);
+            this.listView1.Size = new System.Drawing.Size(2068, 880);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -65,10 +66,12 @@
             // 
             // LeaderBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 296);
+            this.ClientSize = new System.Drawing.Size(1924, 938);
             this.Controls.Add(this.listView1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.Name = "LeaderBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Бодовна табела";

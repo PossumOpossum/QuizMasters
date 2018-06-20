@@ -80,14 +80,42 @@ namespace QuizMasters
             }
             else
             {
-                foreach(Igrach ig in igrachiVoIgra)
+                int counter = 1;
+                HashSet<Igrach> winners = new HashSet<Igrach>();
+                for (int i = 0;i<igrachi.Count;i++)
                 {
-                    if(ig.poeniVkupno > pobednik.poeniVkupno)
+                    if(igrachi[i].poeniVkupno > pobednik.poeniVkupno)
                     {
-                        pobednik = ig;
+                        pobednik = igrachi[i];
+                        counter = 1;
+                    }
+                    else if (igrachi[i].poeniVkupno == pobednik.poeniVkupno)
+                    {
+                        counter++;
+                        winners.Add(pobednik);
+                        winners.Add(igrachi[i]);
                     }
                 }
-                MessageBox.Show("Победник е " + pobednik.ime + " " + pobednik.prezime);
+                if (counter == 1)
+                    MessageBox.Show("Победник е " + pobednik.ime + " " + pobednik.prezime);
+                else
+                {
+                    if (counter == 2)
+                        MessageBox.Show("Победници се " + winners.ElementAt(0).ime + " " 
+                            + winners.ElementAt(0).prezime + " и " + winners.ElementAt(1).ime + " "
+                            + winners.ElementAt(1).prezime);
+                    if (counter == 3)
+                        MessageBox.Show("Победници се " + winners.ElementAt(0).ime + " "
+                            + winners.ElementAt(0).prezime + " и " + winners.ElementAt(1).ime + " "
+                            + winners.ElementAt(1).prezime + " и " + winners.ElementAt(2).ime + " "
+                            + winners.ElementAt(2).prezime);
+                    if (counter == 4)
+                        MessageBox.Show("Победници се " + winners.ElementAt(0).ime + " "
+                            + winners.ElementAt(0).prezime + " и " + winners.ElementAt(1).ime + " "
+                            + winners.ElementAt(1).prezime + " и " + winners.ElementAt(2).ime + " "
+                            + winners.ElementAt(2).prezime + " и " + winners.ElementAt(3).ime + " "
+                            + winners.ElementAt(3).prezime);
+                }
                 this.Close();
             }
         }
