@@ -215,7 +215,6 @@ namespace QuizMasters
             button1.BackColor = Color.White;
             openedQuestions[0] = true;
             enablePlayerChoice(turn);
-            finished = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -476,7 +475,7 @@ namespace QuizMasters
             }
             if (!flag)
             {
-                NextPlayer.Text = "Нова Игра";
+                NextPlayer.Text = "Наредна Игра";
                 finished = true;
             }
         }

@@ -652,7 +652,7 @@ namespace QuizMasters
                 Answer4.Text = D_solutions[0];
                 Answer4.ReadOnly = true;
                 solved = true;
-                NextPlayer.Text = "Нова Игра";
+                NextPlayer.Text = "Наредна Игра";
             }
             else
             {

@@ -405,6 +405,7 @@
             // 
             // button22
             // 
+            this.button22.AutoSize = true;
             this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.Location = new System.Drawing.Point(1284, 630);
             this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -417,6 +418,7 @@
             // 
             // button23
             // 
+            this.button23.AutoSize = true;
             this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.Location = new System.Drawing.Point(1007, 740);
             this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -429,6 +431,7 @@
             // 
             // button24
             // 
+            this.button24.AutoSize = true;
             this.button24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.Location = new System.Drawing.Point(1284, 740);
             this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

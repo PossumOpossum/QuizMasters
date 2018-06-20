@@ -30,7 +30,7 @@ namespace QuizMasters
         {
             InitializeComponent();
             this.igrachi = igrachi;
-            endcounter = 1;
+            endcounter = 10;
             first_true = false;
             second_true = false;
             third_true = false;
@@ -97,7 +97,7 @@ namespace QuizMasters
                 this.KeyPreview = false;
                 next_button.Enabled = true;
                 if (counter == endcounter)
-                    next_button.Text = "Нова Игра";
+                    next_button.Text = "Наредна Игра";
                 if (first_true)
                     textBox1.BackColor = Color.Green;
                 else
