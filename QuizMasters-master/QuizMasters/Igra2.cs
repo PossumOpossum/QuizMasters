@@ -33,7 +33,92 @@ namespace QuizMasters
         private bool solved;
         public bool[] columns { get; set; }
         public HashSet<int> enabledForAnswering { get; set; }
+        int stuck_counter;
 
+        private void SOLVE()
+        {
+            A1.Text = A_words[0];
+            A2.Text = A_words[1];
+            A3.Text = A_words[2];
+            A4.Text = A_words[3];
+            A1.BackColor = Color.White;
+            A2.BackColor = Color.White;
+            A3.BackColor = Color.White;
+            A4.BackColor = Color.White;
+            A1.Enabled = false;
+            A2.Enabled = false;
+            A3.Enabled = false;
+            A4.Enabled = false;
+            lockedbuttons[0] = true;
+            lockedbuttons[1] = true;
+            lockedbuttons[2] = true;
+            lockedbuttons[3] = true;
+            VerifyA.Enabled = false;
+            Answer1.Text = A_solutions[0];
+            Answer1.ReadOnly = true;
+
+            B1.Text = B_words[0];
+            B2.Text = B_words[1];
+            B3.Text = B_words[2];
+            B4.Text = B_words[3];
+            B1.BackColor = Color.White;
+            B2.BackColor = Color.White;
+            B3.BackColor = Color.White;
+            B4.BackColor = Color.White;
+            B1.Enabled = false;
+            B2.Enabled = false;
+            B3.Enabled = false;
+            B4.Enabled = false;
+            lockedbuttons[4] = true;
+            lockedbuttons[5] = true;
+            lockedbuttons[6] = true;
+            lockedbuttons[7] = true;
+            VerifyB.Enabled = false;
+            Answer2.Text = B_solutions[0];
+            Answer2.ReadOnly = true;
+
+            C1.Text = C_words[0];
+            C2.Text = C_words[1];
+            C3.Text = C_words[2];
+            C4.Text = C_words[3];
+            C1.BackColor = Color.White;
+            C2.BackColor = Color.White;
+            C3.BackColor = Color.White;
+            C4.BackColor = Color.White;
+            C1.Enabled = false;
+            C2.Enabled = false;
+            C3.Enabled = false;
+            C4.Enabled = false;
+            lockedbuttons[8] = true;
+            lockedbuttons[9] = true;
+            lockedbuttons[10] = true;
+            lockedbuttons[11] = true;
+            VerifyC.Enabled = false;
+            Answer3.Text = C_solutions[0];
+            Answer3.ReadOnly = true;
+
+            D1.Text = D_words[0];
+            D2.Text = D_words[1];
+            D3.Text = D_words[2];
+            D4.Text = D_words[3];
+            D1.BackColor = Color.White;
+            D2.BackColor = Color.White;
+            D3.BackColor = Color.White;
+            D4.BackColor = Color.White;
+            D1.Enabled = false;
+            D2.Enabled = false;
+            D3.Enabled = false;
+            D4.Enabled = false;
+            lockedbuttons[12] = true;
+            lockedbuttons[13] = true;
+            lockedbuttons[14] = true;
+            lockedbuttons[15] = true;
+            VerifyD.Enabled = false;
+            Answer4.Text = D_solutions[0];
+            Answer4.ReadOnly = true;
+            solved = true;
+            NextPlayer.Text = "Наредна Игра";
+        }
         private void setCLickable(bool mybool)
         {
             for (int i = 0; i < 16; i++)
@@ -89,6 +174,7 @@ namespace QuizMasters
         public Igra2(List<Igrach> igrachi, int mainIndex, int prevFile)
         {
             InitializeComponent();
+            stuck_counter = 0;
             this.mainIndex = mainIndex;
             solved = false;
             buttons = new List<Button>();
@@ -198,6 +284,7 @@ namespace QuizMasters
 
         private void NextPlayer_Click(object sender, EventArgs e)
         {
+            
             bool flag = false;
             foreach(bool bl in lockedbuttons)
             {
@@ -208,6 +295,10 @@ namespace QuizMasters
             {
                 disableAnswers();
                 NextPlayer.Enabled = false;
+            }
+            else
+            {
+                stuck_counter++;
             }
             if (solved)
             {
@@ -226,6 +317,14 @@ namespace QuizMasters
                     this.Close();
                 }
             }
+
+            if (stuck_counter == 2*igrachi.Count() + 1)
+            {
+                SOLVE();
+                FullAnswer.Text = full_solutions[0];
+                solved = true;
+            }
+
                 Player_1.BackColor = Color.White;
                 Player_2.BackColor = Color.White;
                 Player_3.BackColor = Color.White;
@@ -590,87 +689,7 @@ namespace QuizMasters
                         pointsForNow += 2;
                 }
                 igrachi[turn].poeniVkupno += pointsForNow;
-                A1.Text = A_words[0];
-                A2.Text = A_words[1];
-                A3.Text = A_words[2];
-                A4.Text = A_words[3];
-                A1.BackColor = Color.White;
-                A2.BackColor = Color.White;
-                A3.BackColor = Color.White;
-                A4.BackColor = Color.White;
-                A1.Enabled = false;
-                A2.Enabled = false;
-                A3.Enabled = false;
-                A4.Enabled = false;
-                lockedbuttons[0] = true;
-                lockedbuttons[1] = true;
-                lockedbuttons[2] = true;
-                lockedbuttons[3] = true;
-                VerifyA.Enabled = false;
-                Answer1.Text = A_solutions[0];
-                Answer1.ReadOnly = true;
-
-                B1.Text = B_words[0];
-                B2.Text = B_words[1];
-                B3.Text = B_words[2];
-                B4.Text = B_words[3];
-                B1.BackColor = Color.White;
-                B2.BackColor = Color.White;
-                B3.BackColor = Color.White;
-                B4.BackColor = Color.White;
-                B1.Enabled = false;
-                B2.Enabled = false;
-                B3.Enabled = false;
-                B4.Enabled = false;
-                lockedbuttons[4] = true;
-                lockedbuttons[5] = true;
-                lockedbuttons[6] = true;
-                lockedbuttons[7] = true;
-                VerifyB.Enabled = false;
-                Answer2.Text = B_solutions[0];
-                Answer2.ReadOnly = true;
-
-                C1.Text = C_words[0];
-                C2.Text = C_words[1];
-                C3.Text = C_words[2];
-                C4.Text = C_words[3];
-                C1.BackColor = Color.White;
-                C2.BackColor = Color.White;
-                C3.BackColor = Color.White;
-                C4.BackColor = Color.White;
-                C1.Enabled = false;
-                C2.Enabled = false;
-                C3.Enabled = false;
-                C4.Enabled = false;
-                lockedbuttons[8] = true;
-                lockedbuttons[9] = true;
-                lockedbuttons[10] = true;
-                lockedbuttons[11] = true;
-                VerifyC.Enabled = false;
-                Answer3.Text = C_solutions[0];
-                Answer3.ReadOnly = true;
-
-                D1.Text = D_words[0];
-                D2.Text = D_words[1];
-                D3.Text = D_words[2];
-                D4.Text = D_words[3];
-                D1.BackColor = Color.White;
-                D2.BackColor = Color.White;
-                D3.BackColor = Color.White;
-                D4.BackColor = Color.White;
-                D1.Enabled = false;
-                D2.Enabled = false;
-                D3.Enabled = false;
-                D4.Enabled = false;
-                lockedbuttons[12] = true;
-                lockedbuttons[13] = true;
-                lockedbuttons[14] = true;
-                lockedbuttons[15] = true;
-                VerifyD.Enabled = false;
-                Answer4.Text = D_solutions[0];
-                Answer4.ReadOnly = true;
-                solved = true;
-                NextPlayer.Text = "Наредна Игра";
+                SOLVE();
             }
             else
             {
@@ -732,7 +751,7 @@ namespace QuizMasters
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Upatsvo form = new Upatsvo("Втората игра од квизот е асоцијации. Целта на оваа игра е да се погоди конечниот одговор кој треба да се добие како асоцијација од 4те пододговори (А, Б, Ц, Д) кои се добиваат ако асоцијација од соодветните полиња (А1-А4 за А). Правилата на оваа игра се: На ред е играчот чиво име и презиме во горниот дел на прозорецот е обоено со зелена боја. Најпрво натпреварувачот треба да отвори едно од 16те полиња (А1-А4, Б1-Б4, В1-В4, Г1-Г4). Потоа натпреварувачот смее да одговори еден од четирите подоговори или конечниот одговор, доколку погоди погоди еден од четирите пододговори смее да го одговори и конечниот одговор.Потегот на еден играч завршува со притискање на копчето \"Нареден играч\".На ред е играчот чиво име и презиме во горниот дел на прозорецот е обоено со зелена боја.Во оваа игра поени се доделуваат за секој точно одоговрен пододговор и конечен одговор според тоа колку полиња биле отворени пред да се погоди соодветниот одговор. Колона одговорена со едно отворено поле - 4 поени, со две - 3 поени, со три - 2 поени, со четири - 1 поен.\nКонечниот одговор со една отворена колона - 10 поени, со две - 8, со три - 6, со четири - 4.");
+            Upatsvo form = new Upatsvo("Втората игра од квизот е асоцијации. Целта на оваа игра е да се погоди конечниот одговор кој треба да се добие како асоцијација од 4те пододговори (А, Б, Ц, Д) кои се добиваат ако асоцијација од соодветните полиња (А1-А4 за А). Правилата на оваа игра се: На ред е играчот чиво име и презиме во горниот дел на прозорецот е обоено со зелена боја. Најпрво натпреварувачот треба да отвори едно од 16те полиња (А1-А4, Б1-Б4, В1-В4, Г1-Г4). Потоа натпреварувачот смее да одговори еден од четирите подоговори или конечниот одговор, доколку погоди погоди еден од четирите пододговори смее да го одговори и конечниот одговор.Потегот на еден играч завршува со притискање на копчето \"Нареден играч\".На ред е играчот чиво име и презиме во горниот дел на прозорецот е обоено со зелена боја.Во оваа игра поени се доделуваат за секој точно одоговрен пододговор и конечен одговор според тоа колку полиња биле отворени пред да се погоди соодветниот одговор.\nКолона одговорена со едно отворено поле - 4 поени, со две - 3 поени, со три - 2 поени, со четири - 1 поен.\nКонечниот одговор со една отворена колона - 10 поени, со две - 8, со три - 6, со четири - 4.\nВо квизот се играат две асоцијации.");
             form.Show();
         }
     }
