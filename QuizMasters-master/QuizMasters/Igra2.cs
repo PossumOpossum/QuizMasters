@@ -12,6 +12,8 @@ namespace QuizMasters
 {
     public partial class Igra2 : Form
     {
+        int mainIndex;
+        int file_index;
         public List<Igrach> igrachi { get; set; }
         public int turn { get; set; }
         public string[] lines { get; set; }
@@ -84,9 +86,10 @@ namespace QuizMasters
                     VerifyFull.Enabled = true;
             }
         }
-        public Igra2(List<Igrach> igrachi)
+        public Igra2(List<Igrach> igrachi, int mainIndex, int prevFile)
         {
             InitializeComponent();
+            this.mainIndex = mainIndex;
             solved = false;
             buttons = new List<Button>();
             buttons.Add(A1);
@@ -114,7 +117,14 @@ namespace QuizMasters
             enabledForAnswering = new HashSet<int>();
             filenames = System.IO.Directory.GetFiles(@"Asocijacii");
             Random rand = new Random();
-            int file_index = rand.Next(0, filenames.Length);
+            if (mainIndex == 1)
+                file_index = rand.Next(0, filenames.Length);
+            else
+            {   if (prevFile == 0)
+                    file_index = prevFile + 1;
+                else
+                    file_index = prevFile - 1;
+            }
             lines = System.IO.File.ReadAllLines(filenames[file_index]);
             A_words = lines[0].Split(' ');
             A_solutions = lines[1].Split(' ');
@@ -201,12 +211,20 @@ namespace QuizMasters
             }
             if (solved)
             {
-                ///new form
-                Igra_3 forma = new Igra_3(igrachi);
-                forma.Show();
-                this.Close();
-                Upatsvo form = new Upatsvo("Правила на третата игра:\nНа ред е натпреварувачот чие име и презиме во горниот дел на прозорецот е обоено со зелена боја.\nНатпреварувачот најпрво избира едно од 20те полиња. Во секое поле се наоѓа категорија.\nПотоа натпреварувачот треба да избере кој од противниците да одговара прашање од претходно дадената категорија.\nОдбраниот натпреварувач треба да го внесе својот одговор во полето обележано со \"Одговор:\". Доколку одговорот е точен во долниот средишен дел на прозорецот ќе се осветли полето во кое пишува дека одговорот е точен, но ако одоговорот е грешен ќе се осветли полето во кое пишува дека одговорот е погрешен и ќе се покаже точниот одговор.");
-                form.Show();
+                if (mainIndex == 2)
+                {
+                    Igra_3 forma = new Igra_3(igrachi);
+                    forma.Show();
+                    this.Close();
+                    Upatsvo form = new Upatsvo("Правила на третата игра:\nНа ред е натпреварувачот чие име и презиме во горниот дел на прозорецот е обоено со зелена боја.\nНатпреварувачот најпрво избира едно од 20те полиња. Во секое поле се наоѓа категорија.\nПотоа натпреварувачот треба да избере кој од противниците да одговара прашање од претходно дадената категорија.\nОдбраниот натпреварувач треба да го внесе својот одговор во полето обележано со \"Одговор:\". Доколку одговорот е точен во долниот средишен дел на прозорецот ќе се осветли полето во кое пишува дека одговорот е точен, но ако одоговорот е грешен ќе се осветли полето во кое пишува дека одговорот е погрешен и ќе се покаже точниот одговор.");
+                    form.Show();
+                }
+                else
+                {
+                    Igra2 forma = new Igra2(igrachi,2, file_index);
+                    forma.Show();
+                    this.Close();
+                }
             }
                 Player_1.BackColor = Color.White;
                 Player_2.BackColor = Color.White;
